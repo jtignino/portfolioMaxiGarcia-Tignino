@@ -7,13 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- <link rel="stylesheet" href="./css/animate.css"> -->
     <title>Maxi García PH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
 </head>
 
 <body>
     <header>
         <!-- <h4>Hola mundo</h4> -->
-        <nav class="headerBackground nav">
+        <nav class="headerBackground nav animate__animated animate__fadeInDown animate__delay-1s animate__slow">
             <a href="#"><img class="formatoLogo" src="./images/firmay-3-blanco.png" alt="Logo"></a>
             <ul>
                 <li><a href="#">Inicio </a></li>
@@ -60,7 +64,7 @@
         <main>
             <div class="parallax">
                 <!-- utilizo una etiqueta section para el título, subtítulo, párrafo y flecha de scroll. -->
-                <section class="sectionMargin sectionHeight centrarConFlex">
+                <section class="sectionMargin sectionHeight centrarConFlex animate__animated animate__zoomIn animate__slow">
                     <h1>MAXI GARCÍA PH</h1>
                     <!-- <div class="lineaHorLarga"> -->
                     <!-- <img class="lineaHorLarga" src="./images/Line 1-4px.png" alt=""> -->
@@ -88,22 +92,30 @@
                         <!-- agrupo cada IMG con su respectivo link dentro de un contenedor para poder ubicar dicho link dentro de la imagen en el CSS -->
                         <div class="bloque1">
                             <img src="./images/DSC05837_edit3.jpg" alt="Foto 1">
-                            <a href="./pages/galeria.html">VER ÁLBUM</a>
+                            <div class="capa">
+                                <a href="./pages/galeria.html">VER ÁLBUM</a>
+                            </div>
                         </div>
 
                         <div class="bloque1">
                             <img src="./images/DSC_3404_edit3.jpg" alt="Foto 2">
-                            <a href="./pages/galeria.html">VER ÁLBUM</a>
+                            <div class="capa">
+                                <a href="./pages/galeria.html">VER ÁLBUM</a>
+                            </div>
                         </div>
 
                         <div class="bloque1">
                             <img src="./images/DSC_3773_edit3.jpg" alt="Foto 3">
-                            <a href="./pages/galeria.html">VER ÁLBUM</a>
+                            <div class="capa">
+                                <a href="./pages/galeria.html">VER ÁLBUM</a>
+                            </div>
                         </div>
 
                         <div class="bloque1">
                             <img src="./images/DSC_8051_edit3.jpg" alt="Foto 4">
-                            <a href="./pages/galeria.html">VER ÁLBUM</a>
+                            <div class="capa">
+                                <a href="./pages/galeria.html">VER ÁLBUM</a>
+                            </div>
                         </div>
                     </section>
 
@@ -148,6 +160,10 @@
         </footer>
         <!-- fin del footer -->
     </div>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
