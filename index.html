@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Maxi García PH</title>
+</head>
+
+<body>
+    <header>
+        <nav class="headerBackground nav">
+            <a href="#"><img class="formatoLogo" src="./images/firmay-3-blanco.png" alt="Logo"></a>
+            <ul>
+                <li><a href="#">Inicio </a></li>
+                <li><a href="./pages/sobreMi.html">Sobre mí </a></li>
+                <li><a href="./pages/galeria.html">Galería </a>
+                    <ul>
+                        <li><a href="./pages/galeria.html#fotos">Fotografías </a></li>
+                        <li><a href="./pages/galeria.html#videos">Videos </a></li>
+                    </ul>
+                </li>
+                <li><a href="./pages/servicios.html">Servicios </a>
+                    <ul>
+                        <li><a href="">Books </a></li> <!-- los submenú no apuntan a ninguna página aún -->
+                        <li><a href="">Eventos sociales </a></li>
+                        <li><a href="">Imagen de marca </a></li>
+                    </ul>
+                </li>
+                <li><a href="./pages/tienda.html">Tienda </a>
+                    <ul>
+                        <li><a href="">Presets </a></li>
+                        <li><a href="">Cuadros </a></li>
+                    </ul>
+                </li>
+                <li><a href="./pages/contacto.html">Contacto </a></li>
+            </ul>
+            <!-- fin del menú -->
+            <!-- agrupo los logos de redes sociales y los hago referir a cada web. El logo de carrito de compras lo apunto a la página carritoCompras.html -->
+            <div class="navRedes">
+                <a href="https://www.instagram.com/" target="_blank"><img src="./images/logo-instagram-blanco.png"
+                        alt="Instagram"></a>
+                <a href="https://www.pinterest.com/" target="_blank"><img src="./images/logo-pinterest-blanco.png"
+                        alt="Pinterest"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="./images/logo-facebook-blanco.png"
+                        alt="Facebook"></a>
+                <img src="./images/Line 3.png" alt="">
+                <a href="./pages/carritoCompras.html"><img src="./images/bx_shopping-bag-blanco.png"
+                        alt="Carrito de compras"></a>
+            </div>
+            <img class="menuDesplegable" src="./images/menu-sharp.png" alt="Menu desplegable">
+        </nav>
+    </header>
+
+    <div class="gridLayout">
+        <main>
+            <div class="parallax">
+                <!-- utilizo una etiqueta section para el título, subtítulo, párrafo y flecha de scroll. -->
+                <section class="sectionMargin sectionHeight centrarConFlex">
+                    <h1>MAXI GARCÍA PH</h1>
+                    <!-- <div class="lineaHorLarga"> -->
+                    <!-- <img class="lineaHorLarga" src="./images/Line 1-4px.png" alt=""> -->
+                    <!-- </div> -->
+                    <h3 class="subPrincipal">FOTOGRAFÍA PROFESIONAL</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum facere tempore doloribus
+                        consectetur repellat harum deserunt sint in nemo.</p>
+                    <!-- inserto la flecha hacia abajo que haría scroll -->
+                    <!-- <div class="flechaScrollUno"> -->
+                    <a href="#maxiG"><img class="flechaScrollUno" src="./images/flecha-abajo-blanca.png" alt="scroll"></a>
+                    <!-- </div> -->
+                </section>
+
+                <!-- inserto las IMG y los botones/links, los links los apunto a la galería -->
+                <section class="centrarConFlex" id="maxiG">
+                    <div class="centrarConFlex">
+                        <h2>MAXI GARCÍA PH</h2>
+                        <!-- <div class="lineaHorCorta"> -->
+                        <!-- <img class="lineaHorCorta" src="./images/Line 2-corta-3px.png" alt=""> -->
+                        <!-- </div> -->
+                        <h3 class="subSecundario">FOTOGRAFÍA PROFESIONAL</h3>
+                    </div>
+
+                    <section class="sectionMargin galeriaResumen">
+                        <!-- agrupo cada IMG con su respectivo link dentro de un contenedor para poder ubicar dicho link dentro de la imagen en el CSS -->
+                        <div class="bloque1">
+                            <img src="./images/DSC05837_edit3.jpg" alt="Foto 1">
+                            <a href="./pages/galeria.html">VER ÁLBUM</a>
+                        </div>
+
+                        <div class="bloque1">
+                            <img src="./images/DSC_3404_edit3.jpg" alt="Foto 2">
+                            <a href="./pages/galeria.html">VER ÁLBUM</a>
+                        </div>
+
+                        <div class="bloque1">
+                            <img src="./images/DSC_3773_edit3.jpg" alt="Foto 3">
+                            <a href="./pages/galeria.html">VER ÁLBUM</a>
+                        </div>
+
+                        <div class="bloque1">
+                            <img src="./images/DSC_8051_edit3.jpg" alt="Foto 4">
+                            <a href="./pages/galeria.html">VER ÁLBUM</a>
+                        </div>
+                    </section>
+
+                    <a href="#bio"><img class="flechaScrollDos" src="./images/flecha-abajo-blanca.png" alt="scroll" width="50"></a>
+                    
+
+                </section>
+                <!-- fin de las IMG -->
+            </div>
+            <!-- fin del primer parallax -->
+
+            <!-- un breve resumen del fotógrafo y un botón que apunta a la página "Sobre mí" -->
+            <div>
+                <section class="parallaxDos" id="bio">
+                    <div class="posicionDer">
+                        <h2>UN POCO DE MÍ</h2>
+                        <img src="./images/Line 2-corta-3px.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto fugit vitae ab ad
+                            cumque nostrum, assumenda debitis, in amet deleniti sapiente et dolore aut, dolor quod
+                            voluptatem? Accusamus, delectus repellat quisquam perspiciatis illo, ratione error rerum
+                            ipsa quidem illum dolore in quaerat nesciunt itaque odio quod cumque! Est, qui. </p>
+                        <a href="./pages/sobreMi.html">LEER MÁS</a>
+                    </div>
+                </section>
+                <!-- fin del resumen y el segundo parallax -->
+            </div>
+
+        </main>
+
+        <!-- inicia el footer -->
+        <footer class="footerBackground">
+            <p class="copyright"> Copyright © 2022 Maxi García · Todos los derechos reservados </p>
+            <p class="contact"> Contacto: maxigarciaph@gmail.com </p>
+            <div class="navRedesFooter">
+                <a href="https://www.instagram.com/" target="_blank"><img src="./images/logo-instagram-blanco.png"
+                        alt="Instagram"></a>
+                <a href="https://www.pinterest.com/" target="_blank"><img src="./images/logo-pinterest-blanco.png"
+                        alt="Pinterest"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="./images/logo-facebook-blanco.png"
+                        alt="Facebook"></a>
+            </div>
+        </footer>
+        <!-- fin del footer -->
+    </div>
+</body>
+
+</html>

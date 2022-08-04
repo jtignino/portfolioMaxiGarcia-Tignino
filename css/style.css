@@ -1,0 +1,1264 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;700&family=Montserrat:wght@100;300;400;500;700&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;200;300;400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    color: white;       /* declaro el color acá para ahorrar código porque sé que voy a utilizar casi todo en blanco */
+}
+
+/* body{
+    overflow-x: hidden; 
+} */
+
+.gridLayout{
+    display: grid;
+    grid-template-rows: auto 8vh;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "main"
+    "footer";
+    gap: 0px;    
+}
+
+main{
+    grid-area: main;
+}
+
+/* le doy formato a las etiquetas "h" de tal manera que me permita reutilizar propiedades y escribir menos líneas para tener un código más liviano */
+h1{
+    padding-top: 110px;
+}
+
+h1, h2{
+    font-size: 3rem;
+    font-weight:600;
+}
+
+h3{
+    font-size: 1.4rem;
+    font-weight: 400;  
+}
+
+h1, h2, h3{
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    text-transform: uppercase;
+    /* text-align: center; */
+}
+/* fin de las etiquetas "h" */
+
+a{
+    text-decoration: none; 
+    color: white;
+}
+
+.centrarSinFlex{
+    text-align: center;
+}
+
+.centrarConFlex{
+    /* text-align: center;   */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.centrarConFlex2{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+
+.parallax {
+    background-color: black;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.6) 100%), url(../images/parallax-1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 92vh;   
+}
+
+.parallaxDos {
+    background-color: black;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.45) 100%), url(../images/parallax-2.jpg);
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 92vh;  
+}
+
+.parallaxTres{
+    background-color: black;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.8) 100%), url(../images/parallax-3.jpg);
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 92vh;  
+}
+
+.parallaxCuatro{
+    background-color: black;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.8) 100%), url(../images/parallax-4.jpg);
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 92vh; 
+}
+
+.parallaxCinco{
+    background-color: black;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.8) 100%), url(../images/parallax-5.jpg);
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 92vh; 
+}
+
+.parallaxSeis{
+    background-color: black;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.8) 100%), url(../images/parallax-6.jpg);
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 92vh; 
+}
+
+.parallaxSiete{
+    background-color: black;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.8) 100%), url(../images/parallax-7.jpg);
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 92vh; 
+}
+
+.parallaxOcho{
+    background-color: black;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.8) 100%), url(../images/parallax-1.jpg);
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 92vh; 
+}
+
+/* el header lo hice fixed para poder usar un background con opacidad que me permita ver el parallax */
+.headerBackground{
+    position: fixed; 
+    top: 0px;
+    width: 100%;
+    height: 75px;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+.formatoLogo{
+    width: 135px;
+}
+
+/* este nav incluye al menú y al menú de las redes sociales. Lo hice relative porque quiero que después se ajuste la posición en relación al "alto" del header */
+.nav{
+    display: flex;
+    padding: 0px 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navRedes{
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.navRedes a img{
+    width: 20px;
+}
+
+.navRedes img{
+    height: 20px;
+}
+
+/* acá comienzo a trabajar el menú con submenú */
+.nav ul{
+    list-style: none;
+    font-size:0;
+    height: 26px; 
+    width: 52%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.nav ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.nav ul li a{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+}
+
+.nav ul ul{
+    position: absolute;
+    margin: 0px;
+    display: none;
+    /* text-align: center; */
+}
+
+.nav ul ul li{
+    display: block;
+    width: 105px;
+    padding: 4px 0px 4px 10px;
+    margin: 1px 0px;
+    background-color: rgba(184, 184, 184, 0.9);     
+    z-index: 3;
+}
+
+.nav ul ul li a{
+    font-size: 1.4rem;
+    line-height: 16px;
+    color: black;
+}
+
+.nav ul li:hover{
+    border-bottom: 1px solid white;
+} 
+.nav ul li ul li:hover{
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+} 
+
+.nav ul li:hover ul{
+    position: absolute;
+    display: block;  
+}
+
+.menuDesplegable{
+    display: none;
+}
+/* fin del formato del menú */
+
+/* primera section del index */
+.parallax .centrarConFlex h1{
+    padding-top: 15vh;
+    font-weight:600;
+    font-size: 6rem;
+    letter-spacing: 8px;
+    word-spacing: 15px;
+    margin-bottom: 8px;
+    border-bottom: 3px solid white;
+}
+
+.subPrincipal{
+    margin-bottom: 0px;
+    padding-bottom: 8vh;
+    font-size: 2.6rem;
+    font-weight: 400;
+    letter-spacing: 8px;
+    word-spacing: 10px;
+}
+
+.parallax .centrarConFlex p{
+    max-width: 65%;
+    padding-bottom: 10vh;
+    font-weight: 100;
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.lineaHorLarga{
+    /* text-align: center; */
+    width: 670px;
+    margin: 2px 0px;
+    height: 3px;
+}
+
+/* .lineaHorLarga img{
+    height: 3px;
+    width: 670px;
+} */
+
+.lineaHorCorta{
+    /* text-align: center; */
+    width: 461px;
+    height: 2px;
+    margin: 8px 0px 2px 0px;
+}
+
+/* .lineaHorCorta img{
+    width: 461px;
+    height: 2px;
+} */
+
+.flechaScrollUno{
+    /* text-align: center; */
+    width: 55px;
+    margin-bottom: 12vh;
+}
+
+.flechaScrollDos{
+    /* text-align: center; */
+    width: 55px;
+    padding-top: 5vh;
+    padding-bottom: 25vh;
+}
+
+
+/* acá comienzo a darle formato al resumen de fotos */
+
+.parallax .centrarConFlex h2{
+    /* height: 22vh; */
+    margin-bottom: 4px;
+    padding-top: 14vh;
+    font-size: 4rem;
+    letter-spacing: 8px;
+    word-spacing: 10px;
+    border-bottom: 2px solid white;
+}
+
+.subSecundario{
+    margin-bottom: 9vh;
+    font-size: 1.8rem;
+    letter-spacing: 7px;
+    word-spacing: 7px;
+} 
+
+.sectionMargin{     
+    /* hago una section con márgenes de 5% de cada lado */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;  
+    /* dejo los margenes declarados para aquellos casos en los que sectionMargin no sea hijo de un padre flexible */
+}
+
+.sectionHeight{
+    min-height: 100vh;
+}
+/* .galeriaResumen{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+} */
+
+.galeriaResumen{ /* sobreescribi */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* .bloque1{
+    
+    position: relative;
+    width: 46%;
+    margin-bottom: 4%;
+} */
+
+.bloque1{ /* sobreescribi */
+    display: flex;
+    position: relative;
+    min-width: 100px;
+    flex: 400px;
+    
+}
+
+.bloque1 a{
+    /* display: flex; */
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    text-transform: uppercase;
+    padding: 5px 18px;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    border: solid 1px white;
+    transition: background-color 0.5s;  
+}
+
+.bloque1 a:hover{
+    background: white;
+    transition: background-color 0.5s;
+    color: black;
+}
+
+.bloque1 img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* segunda section del index */
+.posicionDer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    left: 50%;
+    min-height: 92vh;
+    width: 50%;
+    padding-top: 25vh;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.posicionDer h2{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+.posicionDer p{
+    margin: 10px 0px;
+    font-weight: 100;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.posicionDer img{
+    width: 45px;
+    height: 2px;
+}
+
+.posicionDer a{
+    /* display: inline-block; */
+    width: 125px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    padding: 6px 20px;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    text-align: center;
+    border: solid 1px white;
+    transition: background-color 0.5s;
+}
+
+.posicionDer a:hover{
+    background: white;
+    transition: background-color 0.5s;
+    color: black;
+}
+/* fin de la segunda section */
+
+/* formato del footer */
+.footerBackground{
+    grid-area: footer;
+    width: 100%;
+    display: flex;
+    padding: 5px 5%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.copyright{
+    font-size: 1.2rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: rgb(218, 218, 218);
+}
+
+.contact{
+    font-size: 1.2rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: rgb(218, 218, 218);
+}
+
+.navRedesFooter{
+    display: none;
+}
+
+/* fin del footer */
+
+/* pág. de contacto y formulario */
+/* creo "secForm" para darle un espacio al parallax con respecto al formulario */
+.secForm{    
+    display: flex;
+    padding-bottom: 40px;
+    width: 90%;
+}
+
+.contenedorForm{
+    min-width: 30%;
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 35px;
+    background-color: rgba(0, 0, 0, 0.79);
+}
+
+
+.formInput{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+    width: 100%;
+    margin-bottom: 15px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(223, 222, 222, 0.8);
+    color: inherit; 
+}
+
+.formInput:focus{
+    outline: none;
+}
+
+
+.contenedorForm .label{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin: 5px 0px 3px 0px;
+}
+
+.contenedorForm legend{
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.checkboxInfo{
+    margin-bottom: 5px;
+}
+
+.checkboxInfo label{
+    font-size: 1.2rem;
+    padding-left: 5px;
+}
+
+.contenedorForm .contenedorBotones{
+    text-align: center;
+}
+
+.contenedorForm .contenedorBotones .boton{
+    height: 30px;
+    width: 38%;
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: inherit;
+    text-transform: capitalize;
+    margin: 20px 10px 0px 10px;
+    cursor: pointer;
+    border: solid 1px white;
+    background-color: transparent;
+    transition: background-color 0.5s;  
+    color: inherit;
+}
+
+.contenedorForm .contenedorBotones .boton:hover{
+    background: white;
+    transition: background-color 0.5s;
+    color: black;
+}
+/* fin de pág. de contacto y formulario */
+
+/* inicio de pag. Sobre mi */
+
+.sectionSobreMi{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 65%;
+    min-height: 50vh;
+}
+
+.sectionSobreMi p{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 100;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    line-height: 24px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+/* fin de pag. Sobre mi */
+
+/* inicio de pag. Galería */
+/* .galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+} */
+
+.parallaxSeis .centrarConFlex2 h2{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding-bottom: 4px;   
+    font-size: 2.2rem;
+    border-bottom: 1px solid white;
+    text-align: left;
+} 
+
+.gridFotos{
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    grid-template-columns: repeat(3,1fr);   
+    grid-template-areas:
+    "img1 img2 img3"
+    "img4 img2 img5"
+    "img4 img6 img5";
+    gap: 0px;    
+    justify-items: center;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+/* .gridFotos :nth-child(2){
+    align-self: center;
+} */
+
+.imagen1{
+    grid-area: img1;
+}
+.imagen2{
+    grid-area: img2;
+}
+.imagen3{
+    grid-area: img3;
+}
+.imagen4{
+    grid-area: img4;
+}
+.imagen5{
+    grid-area: img5;
+}
+.imagen6{
+    grid-area: img6;
+}
+
+.bloque2{
+    position: relative;
+    width: 100%;
+    display: flex; /* use esta propiedad porque quedaba un pequeño margen en el bottom y la única forma de sacarlo fue usando flex */
+}
+
+.bloque2 img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.bloque2 a{
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    bottom: 30px;
+    left: 30px;
+    padding: 4px 15px;
+    letter-spacing: 2px;
+    border: solid 1px white;
+    transition: background-color 0.5s;  
+}
+
+.bloque2 a:hover{
+    background: white;
+    transition: background-color 0.5s;
+    color: black;
+}
+
+/* agrego un poco de margin para separar las fotos del título */
+.marginTop{     
+    margin-top: 40px;
+}
+
+.paddingBottom{     
+    padding-bottom: 40px;
+}
+
+.bordeInf{
+    border-bottom: 1px solid white;
+}
+
+.iframeBox{
+    display: flex;
+    /* min-width: 55%;
+    flex: 70%;
+    min-height: 400px;     */
+    justify-content: center;
+    align-items: stretch;
+    width: 560px;
+    max-width: 100%;
+    height: 315px;
+}
+
+.iframe {
+    width: 100%;
+    object-fit: cover;
+    padding: 2% 0;  
+}
+/* fin de pag. Galería */
+
+
+/* inicio de pag. Servicios */
+.parallaxSiete .centrarConFlex2 h2{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding-bottom: 4px;   
+    font-size: 2.2rem;
+    border-bottom: 1px solid white;
+    text-align: left;
+} 
+
+/* .parallaxSiete .centrarConFlex2 :nth-child(even){
+    /* align-self: flex-start; */
+    /* border-bottom: 1px solid white; */
+
+
+
+.parallaxSiete .sectionMargin p{
+    margin-top: 5px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-weight: 300;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: rgb(228, 228, 228);
+}
+/* fin de pag. Servicios */
+
+
+/* inicio de pag. Tienda */
+.boxTienda{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 54vh;
+        
+}
+
+.bloque3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 34%;
+    height: 90%;
+    /* margin: 15px 30px 50px 30px; */
+    /* margin-left: 30px;
+    margin-right: 30px; */
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+
+.bloque3 h2{
+    font-size: 1.6rem;
+    padding: 12px 0;
+    margin-bottom: 0px;
+    /* padding-left: 20px;
+    padding-bottom: 30px; */
+}
+
+.bloque3 img{
+    /* width: 50%; */
+    max-height: 50%;
+    padding: 10px;
+}
+
+.box{
+    /* height: 10%; */
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    justify-content: space-between;
+}
+
+.bloque3 .box h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-left: 25px;
+    padding: 5px 0px;
+    font-size: 1.5rem;
+    letter-spacing: 0px;
+    transition: background-color 0.5s;  
+}
+
+.bloque3 .box a{
+    text-transform: uppercase;
+    margin-right: 25px;
+    padding: 5px 12px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    border: solid 1px white;
+    transition: background-color 0.5s;  
+}
+
+.bloque3 .box a:hover{
+    background: white;
+    transition: background-color 0.5s;
+    color: black;
+}
+/* fin de pag. Tienda */
+
+/* inicio de pag. Carrito de compras */
+.parallaxOcho .centrarConFlex2 h4{
+    width: 100%;
+    margin-top: 5px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 20px;
+    border-bottom: 1px solid white;
+}
+
+.botonVolver{
+    margin-top: 40px;
+}
+
+.botonVolver a{
+    
+    text-transform: uppercase;
+    
+    padding: 6px 20px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    border: solid 1px white;
+    transition: background-color 0.5s;  
+}
+
+.botonVolver a:hover{
+    background: white;
+    transition: background-color 0.5s;
+    color: black;
+}
+
+/* ------- RESPONSIVE ------- */
+/* pantallas mayores a 768px y menores a 1024 porque la navegacion de los iconos de redes sociales no se adapta bien */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .navRedes{
+        width: 15%; 
+    }
+    
+    .navRedes a img{
+        width: 18px;
+    }
+    
+    .navRedes img{
+        height: 18px;
+    }
+
+    .formatoLogo{
+        width: 100px;
+    }
+    
+    .nav ul{
+        width: 60%;
+    }
+
+    .parallaxDos {
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.45) 100%), url(../images/maxi_perfil_parallax.jpg);
+    }
+    
+    .copyright{
+        letter-spacing: 0px;
+    }
+
+    .contact{
+        letter-spacing: 0px;
+    }
+
+    /* contacto */
+    .contenedorForm{
+        min-width: 35%;
+        max-width: 50%;
+    }
+
+    /* tienda */
+    .bloque3{
+        width: 40%;
+    }
+
+    .bloque3 img{
+        max-width: 80%;
+    }
+
+    .bloque3 .box h4{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        margin-left: 25px;
+        padding: 5px 0px;
+        font-size: 1.5rem;
+        letter-spacing: 0px;
+        transition: background-color 0.5s;  
+    }
+    
+    .bloque3 .box a{
+        
+        margin-right: 25px;
+        padding: 5px 10px;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        border: solid 1px white;
+        
+    }
+
+} 
+
+/* pantallas menores a 767px */
+@media only screen and (max-width: 767px){
+    h1{
+        font-size: 2.8rem;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+    }
+    /* header */
+    .headerBackground{
+        background: rgb(0, 0, 0);
+    }
+
+    .navRedes{
+        display: none;
+    }
+
+    .nav{
+        justify-content: center;
+    }
+
+    .formatoLogo{
+        position: relative;
+    }
+
+    .nav ul{
+        flex-direction: column;
+        display: none; /*comentar esta fila para poder ver el menu y navegar */
+    }
+
+    .menuDesplegable{
+        display: block;
+        position: absolute;
+        right: 5%;
+    }
+    /* fin de header */
+
+    /* footer */
+    .copyright{
+        font-size: 1.1rem;
+        letter-spacing: 0px;
+    }
+
+    .contact{
+        font-size: 1.1rem;
+        letter-spacing: 0px;
+    }
+
+    .footerBackground{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .navRedesFooter{
+        display: block;
+        align-self: center;
+    }
+
+    .navRedesFooter a img{
+        width: 24px;
+        margin: 10px 8px;
+    }
+    /* fin de footer */
+
+    /* index */
+    .parallax .centrarConFlex h1{
+        padding-top: 25vh;
+        font-weight: 600;
+        font-size: 3.3rem;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        /* margin-bottom: 8px; */
+        border-bottom: 1px solid white;
+    }
+    
+    .subPrincipal{
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+    }
+    
+    .parallax .centrarConFlex p{
+        max-width: 90%;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        line-height: 19px;
+    }
+
+    .flechaScrollUno{
+        display: none;
+    }
+
+    .parallax .centrarConFlex h2{
+        display: none;
+    }
+    
+    .subSecundario{
+        display: none;
+    } 
+
+    .bloque1 a{
+        width: 90px;
+        left: 50%;
+        margin-left: -45px;
+        bottom: 20px;
+        padding: 4px 3px;
+        font-size: 1.2rem;
+        border: none;
+        border-bottom: 1px solid white;
+    }
+
+    .flechaScrollDos{
+        display: none;
+    }
+
+    .galeriaResumen{
+        padding-bottom: 10vh;
+    }
+
+    .gridLayout{
+        grid-template-rows: auto 18vh;
+    }
+
+    .parallaxDos {
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.45) 100%), url(../images/maxi_perfil_parallax.jpg);
+        min-height: 82vh; 
+    }
+
+    .posicionDer{
+        position: initial;
+        min-height: 82vh;
+        width: 100%;
+        padding-top: 23vh;
+        padding-left: 10%;
+        padding-right: 10%;
+        background-color: rgba(0, 0, 0, 0.42);
+    }
+    
+    .posicionDer h2{
+        font-size: 2.4rem;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        text-align: center;
+    }
+    
+    .posicionDer p{
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        line-height: 19px;
+        text-align: justify;
+    }
+    
+    .posicionDer img{
+        display: none;
+    }
+    
+    .posicionDer a{
+        width: 110px;
+        margin: 33px auto;
+        padding: 6px 5px;
+        font-size: 1.2rem;
+        letter-spacing: 2px;  
+    }
+    /* fin de index */
+
+    /* sobre mi */
+    .parallaxCuatro{
+        min-height: 82vh;
+    }
+
+    .sectionSobreMi{
+        width: 80%;
+    }
+
+    .sectionSobreMi p{
+        text-align: justify;
+    }
+
+    /* fin de sobre mi */
+
+    /* formulario de contacto */ 
+    .parallaxTres{
+        min-height: 82vh;
+    }
+
+    .secForm{
+        min-height: 60vh;
+        align-items: center;
+    }
+
+    .contenedorForm{
+        min-width: 90%;
+        max-width: 90%;
+        height: 80%;           
+    }
+    /* fin de formulario de contacto */
+
+    /* servicios */
+    .parallaxSiete{
+        min-height: 82vh;
+    }
+
+    .parallaxSiete .centrarConFlex2 h2{
+        font-size: 1.8rem;
+        width: 90%;
+        
+    } 
+    .parallaxSiete .sectionMargin p{
+        letter-spacing: 1px;
+        line-height: 19px;
+        width: 90%;
+        margin: 15px 0;
+        text-align: justify;
+        padding: 0px;
+    }
+
+    .parallaxSiete .sectionMargin :nth-child(7){
+        padding-bottom: 25px;
+    } 
+    /* fin de servicios */
+
+    /* tienda */
+    .parallaxCinco{
+        min-height: 82vh;
+    }
+
+    .boxTienda{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        row-gap: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+        height: auto;
+    } 
+
+    .bloque3{
+        width: 90%;
+        height: 90%;
+    }
+
+    .bloque3 img{
+        width: 50%;
+    }
+
+    .box{
+        flex-direction: column;
+        width: 100%;
+        margin: 12px 0 15px 0;
+        row-gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+ 
+    .bloque3 .box h4{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        margin-left: 0px;
+        padding: 5px 0px;
+        font-size: 1.5rem;
+        letter-spacing: 0px;
+        transition: background-color 0.5s;  
+    }
+    
+    .bloque3 .box a{
+        margin-right: 0px;
+        padding: 5px 10px;
+        font-size: 1.2rem;
+        letter-spacing: 1px; 
+        border: initial;
+        border-bottom: 1px solid white;
+    }
+    /* fin de tienda */
+
+    /* galeria */
+    .parallaxSeis .centrarConFlex2 h2{
+        font-size: 1.8rem;
+        width: 100%;
+        
+    } 
+    
+    .gridFotos{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img2"
+        "img3"
+        "img4"
+        "img4"
+        "img6"
+        "img5"
+        "img5";
+        row-gap: 15px;         
+    }
+    
+    .iframeBox{
+        width: 100%;
+
+    }    
+    /* fin de galeria */
+
+    /* carrito de compras */
+    .parallaxOcho{
+        min-height: 82vh;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    /* contacto */
+    .parallaxTres{
+        background-position-x: right;
+    }
+}
