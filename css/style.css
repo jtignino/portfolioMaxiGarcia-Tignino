@@ -8,15 +8,15 @@
 
 html{
     font-size: 62.5%;
-    font-style: normal;
-    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-    color: white;       /* declaro el color acá para ahorrar código porque sé que voy a utilizar casi todo en blanco */
 }
 
-/* body{
-    overflow: hidden; 
-} */
+body{
+    /* overflow: hidden;  */
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    color: white;       /* declaro el color acá para ahorrar código porque sé que voy a utilizar casi todo en blanco */
+}
 
 .gridLayout{
     display: grid;
@@ -430,7 +430,7 @@ a{
 }
 
 .bloque1 .capa a, .bloque2 .capa a{
-    position: absolute;
+    text-align: center;
     text-transform: uppercase;
     padding: 5px 18px;
     font-size: 1.4rem;
@@ -450,9 +450,9 @@ a{
 }
 
 .bloque1:hover > .capa a{
-
-    transform: translateY(450%);
-    transition:  transform 0.2s ease-out, background-color 0.5s, color 0.5s;
+    /* transform: translateY(100%); */
+    /* transition: transform 0.5s ease-out, background-color 0.5s, color 0.5s; */
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .bloque1 > .capa a:hover, .bloque2 > .capa a:hover{
@@ -510,13 +510,14 @@ a{
     letter-spacing: 2px;
     text-align: center;
     border: solid 1px white;
-    transition: background-color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .posicionDer a:hover{
     background: white;
-    transition: background-color 0.5s;
     color: black;
+    transition: background-color 0.5s, color 0.5s;
+    
 }
 /* fin de la segunda section */
 
@@ -941,6 +942,30 @@ a{
         letter-spacing: 0px;
     }
 
+    /* index */
+    .bloque1 .capa, .bloque2 .capa{
+        opacity: 1;
+        background: rgba(0, 0, 0, 0);
+        align-items: flex-end;
+    }
+
+    .bloque1 .capa a, .bloque2 .capa a{
+        width: 105px;
+        padding: 4px 3px;
+        margin-bottom: 20px;
+        font-size: 1.4rem;
+        border: none;
+        border-bottom: 1px solid white; 
+    }
+    
+    .bloque1:hover > img, .bloque2:hover > img{
+        transform: scale(1);
+    }
+
+    .divFlecha{
+        display: none;
+    }
+
     /* contacto */
     .contenedorForm{
         min-width: 35%;
@@ -1004,7 +1029,7 @@ a{
 
     .nav ul{
         flex-direction: column;
-        display: none; /*comentar esta fila para poder ver el menu y navegar */
+        /* display: none; comentar esta fila para poder ver el menu y navegar */
     }
 
     .menuDesplegable{
@@ -1078,16 +1103,26 @@ a{
         display: none;
     } 
 
-    .bloque1 a{
-        width: 90px;
-        left: 50%;
-        margin-left: -45px;
-        bottom: 20px;
+  
+    .bloque1 .capa, .bloque2 .capa{
+        opacity: 1;
+        background: rgba(0, 0, 0, 0);
+        align-items: flex-end;
+    }
+
+    .bloque1 .capa a, .bloque2 .capa a{
+        width: 105px;
         padding: 4px 3px;
+        margin-bottom: 20px;
         font-size: 1.2rem;
         border: none;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid white; 
     }
+    
+    .bloque1:hover > img, .bloque2:hover > img{
+        transform: scale(1);
+    }
+    
 
     .flechaScrollDos{
         display: none;
