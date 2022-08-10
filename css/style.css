@@ -20,7 +20,7 @@ body{
 
 .gridLayout{
     display: grid;
-    grid-template-rows: auto 8vh;
+    grid-template-rows: auto 10vh;
     grid-template-columns: 1fr;
     grid-template-areas:
     "main"
@@ -95,7 +95,7 @@ a{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 92vh;
+    min-height: 90vh;
 }
 
 .parallaxDos {
@@ -105,7 +105,7 @@ a{
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 92vh;  
+    min-height: 90vh;  
 }
 
 .parallaxTres{
@@ -115,7 +115,7 @@ a{
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 92vh;  
+    min-height: 90vh;  
     /* overflow-y: hidden; */
 }
 
@@ -126,7 +126,7 @@ a{
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 92vh; 
+    min-height: 90vh; 
 }
 
 .parallaxCinco{
@@ -136,7 +136,7 @@ a{
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 92vh; 
+    min-height: 90vh; 
 }
 
 .parallaxSeis{
@@ -146,7 +146,7 @@ a{
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 92vh; 
+    min-height: 90vh; 
 }
 
 .parallaxSiete{
@@ -156,7 +156,7 @@ a{
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 92vh; 
+    min-height: 90vh; 
 }
 
 .parallaxOcho{
@@ -166,7 +166,7 @@ a{
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 92vh; 
+    min-height: 90vh; 
 }
 
 /* el header lo hice fixed para poder usar un background con opacidad que me permita ver el parallax */
@@ -442,6 +442,10 @@ a{
     transition: background-color 0.5s, color 0.5s;
 }
 
+.carruselImg{
+    max-height: 75vh;
+    object-fit: cover;
+}
 
 /* segunda section del index */
 .posicionDer{
@@ -451,7 +455,7 @@ a{
     align-items: flex-start;
     position: relative;
     left: 50%;
-    min-height: 92vh;
+    min-height: 90vh;
     width: 50%;
     padding-top: 25vh;
     padding-bottom: 5%;
@@ -502,6 +506,12 @@ a{
 /* fin de la segunda section */
 
 /* formato del footer */
+.footer{
+    grid-area: footer;
+    width: 100%;
+    background-color: black;
+}
+
 .footerBackground{
     grid-area: footer;
     width: 100%;
@@ -527,9 +537,13 @@ a{
     color: rgb(218, 218, 218);
 }
 
-.navRedesFooter{
+/* .navRedesFooter{
     display: none;
+} */
+.navRedesFooter img{
+    width: 24px;
 }
+
 
 /* fin del footer */
 
@@ -624,7 +638,7 @@ a{
     min-height: 50vh;
 }
 
-.sectionSobreMi p{
+.sectionSobreMi-- p{
     margin-top: 50px;
     margin-bottom: 50px;
     padding-top: 20px;
@@ -1168,7 +1182,7 @@ a{
         width: 80%;
     }
 
-    .sectionSobreMi p{
+    .sectionSobreMi-- p{
         text-align: justify;
     }
 
