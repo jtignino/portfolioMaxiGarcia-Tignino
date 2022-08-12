@@ -84,10 +84,10 @@
         <main>
             <div class="parallax">
                 <!-- utilizo una etiqueta section para el título, subtítulo, párrafo y flecha de scroll. -->
-                <section class="sectionMargin-- container-xl px-5 px-xl-0 sectionHeight centrarConFlex">
+                <section class="container-xl px-5 px-xl-0 sectionHeight centrarConFlex">
                     <h1 class="animate__animated animate__backInDown animate__slow">MAXI GARCÍA PH</h1>
                     <h3 class="subPrincipal animate__animated animate__backInDown animate__slow animate__delay-1s">FOTOGRAFÍA PROFESIONAL</h3>
-                    <p class="animate__animated animate__zoomIn animate__delay-3s animate__slow">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum facere tempore doloribus consectetur repellat harum deserunt sint in nemo.</p>
+                    <p class="animate__animated animate__fadeIn animate__delay-3s animate__slow">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum facere tempore doloribus consectetur repellat harum deserunt sint in nemo.</p>
                     <div class="divFlecha animate__animated animate__flash animate__slower animate__infinite animate__delay-5s centrarConFlex">
                         <a href="#maxiG"><img class="flechaScrollUno" src="./images/angle-down.png" alt=""></a>
                     </div>
@@ -95,17 +95,16 @@
 
                 <!-- inserto las IMG y los botones/links, los links los apunto a la galería -->
                 <section class="container-xl px-5 px-xl-0 d-flex min-vh-100 justify-content-center align-items-center posicionRelativa" id="maxiG">
-                    <div class="row min-vh-80 d-flex justify-content-center align-items-center row-height">
-                        <div class="container-xl-- px-xl-0-- col-11 col-lg-6">
-                            <div class="wow posicionIzq animate__animated animate__fadeIn animate__delay-1s animate__slow">
+                    <div class="row min-vh-80 d-flex justify-content-center align-items-center row-height">  
+                        <div class="col-11 col-lg-6">
+                            <div class="wow posicionIzq animate__animated animate__fadeIn">
                                 <h2 class="pb-1">Título</h2>
                                 <img src="./images/Line 2-corta-3px.png" alt="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatibus modi, doloremque iure nisi quo vero ratione inventore nostrum? Nobis quaerat corporis hic porro nihil. </p>
-                                <!-- <a href="./pages/sobreMi.html">LEER MÁS</a> -->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatibus modi, doloremque iure nisi quo vero ratione inventore nostrum? Nobis quaerat corporis hic porro nihil. </p> 
                             </div>
                         </div>
                         
-                        <div id="carouselExampleCaptions" class="container-xl-- px-xl-0-- col-11 col-lg-6 carousel slide w-100--" data-bs-ride="carousel">
+                        <div id="carouselExampleCaptions" class="container-xl-- px-xl-0-- col-11 col-lg-6 carousel slide carruselImg" data-bs-ride="carousel">
                             <div class="carousel-indicators carousel-indicators-height pb-3 mb-0">
                                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -167,14 +166,18 @@
             <!-- un breve resumen del fotógrafo y un botón que apunta a la página "Sobre mí" -->
             <section class="parallaxDos" id="bio">
                 <div class="container-xl px-5 px-xl-0 d-flex min-vh-90 justify-content-start align-items-center">
-                    <div class="wow posicionDer animate__animated animate__fadeIn animate__delay-1s animate__slow">
-                        <h2 class="pb-1">UN POCO DE MÍ</h2>
-                        <img src="./images/Line 2-corta-3px.png" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto fugit vitae ab ad
-                            cumque nostrum, assumenda debitis, in amet deleniti sapiente et dolore aut, dolor quod
-                            voluptatem? Accusamus, delectus repellat quisquam perspiciatis illo, ratione error rerum
-                            ipsa quidem illum dolore in quaerat nesciunt itaque odio quod cumque! Est, qui. </p>
-                        <a href="./pages/sobreMi.html">LEER MÁS</a>
+                    <div class="row justify-content-center justify-content-lg-end align-items-center">
+                        <div class="col-11 col-lg-6">
+                            <div class="wow posicionDer animate__animated animate__fadeIn">
+                                <h2 class="pb-1">UN POCO DE MÍ</h2>
+                                <img src="./images/Line 2-corta-3px.png" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto fugit vitae ab ad
+                                    cumque nostrum, assumenda debitis, in amet deleniti sapiente et dolore aut, dolor quod
+                                    voluptatem? Accusamus, delectus repellat quisquam perspiciatis illo, ratione error rerum
+                                    ipsa quidem illum dolore in quaerat nesciunt itaque odio quod cumque! Est, qui. </p>
+                                <a href="./pages/sobreMi.html">LEER MÁS</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

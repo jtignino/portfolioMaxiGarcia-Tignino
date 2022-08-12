@@ -184,29 +184,7 @@ a{
     width: 120px;
 }
 
-/* este nav incluye al menú y al menú de las redes sociales. Lo hice relative porque quiero que después se ajuste la posición en relación al "alto" del header */
-/* .nav{
-    display: flex;
-    padding: 0px 5%;
-    justify-content: space-between;
-    align-items: center;
-} */
-
-/* .navRedes{
-    width: 140px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;   
-} */
-
-.navRedes a img{
-    width: 20px;
-}
-
-.navRedes img{
-    height: 20px;
-}
-
+/* navbar */
 .icon-service-bag{
     font-size: 17px;
     color: rgba(255, 255, 255, 0.55);
@@ -234,69 +212,10 @@ a{
     background-color: rgba(255, 255, 255, 0.55);
 }
 
-/* acá comienzo a trabajar el menú con submenú */
-.nav ul{
-    list-style: none;
-    font-size:0;
-    height: 26px; 
-    width: 52%;
-    margin-bottom: 0px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: stretch;
-}
-
-.nav ul li{
-    display: inline-block;
-    position: relative;
-}
-
-.nav ul li a{
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: white;
-}
-
-.nav ul ul{
-    position: absolute;
-    margin: 0px;
-    display: none;
-    /* text-align: center; */
-}
-
-.nav ul ul li{
-    display: block;
-    width: 105px;
-    padding: 4px 0px 4px 10px;
-    margin: 1px 0px;
-    background-color: rgba(184, 184, 184, 0.9);     
-    z-index: 3;
-}
-
-.nav ul ul li a{
-    font-size: 1.4rem;
-    line-height: 16px;
-    color: black;
-}
-
-.nav ul li:hover{
-    border-bottom: 1px solid white;
-} 
-
-.nav ul li ul li:hover{
-    background-color: rgba(255, 255, 255, 1);
-    border: none;
-} 
-
-.nav ul li:hover ul{
-    position: absolute;
-    display: block;  
-}
-
 .menuDesplegable{
     display: none;
 }
-/* fin del formato del menú */
+/* navbar */
 
 /* primera section del index */
 .parallax .centrarConFlex h1{
@@ -335,25 +254,12 @@ a{
 }
 
 .flechaScrollUno{
-    /* text-align: center; */
     width: 45px;
     padding: 10px 0 0px 0;
-
-    /* margin-bottom: 12vh; */
 }
-
-.flechaScrollDos{
-    /* text-align: center; */
-    width: 45px;
-    padding-top: 15vh;
-    padding-bottom: 25vh;
-}
-
 
 /* acá comienzo a darle formato al resumen de fotos */
-
 .parallax .centrarConFlex h2{
-    /* height: 22vh; */
     margin-bottom: 4px;
     padding-top: 14vh;
     font-size: 4rem;
@@ -370,24 +276,14 @@ a{
 } 
 
 .sectionMargin{     
-    /* hago una section con márgenes de 5% de cada lado */
     width: 90%;
     margin-left: auto;
     margin-right: auto;  
-    /* dejo los margenes declarados para aquellos casos en los que sectionMargin no sea hijo de un padre flexible */
 }
 
 .sectionHeight{
     min-height: 100vh;
 }
-/* .galeriaResumen{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-} */
 
 .galeriaResumen{ /* sobreescribi */
     width: 90%;
@@ -401,21 +297,13 @@ a{
     padding-bottom: 10vh;
 }
 
-/* .bloque1{
-    
-    position: relative;
-    width: 46%;
-    margin-bottom: 4%;
-} */
-
 .bloque1{ /* sobreescribi */
     display: flex;
     position: relative;
     min-width: 100px;
     flex: 400px;
     overflow: hidden; 
-    cursor: pointer;
-    
+    cursor: pointer; 
 }
 
 .bloque1 img, .bloque2 img{
@@ -467,8 +355,6 @@ a{
 }
 
 .bloque1:hover > .capa a{
-    /* transform: translateY(100%); */
-    /* transition: transform 0.5s ease-out, background-color 0.5s, color 0.5s; */
     transition: background-color 0.5s, color 0.5s;
 }
 
@@ -477,26 +363,23 @@ a{
     color: black;
     transition: background-color 0.5s, color 0.5s;
 }
+
 .carousel-indicators-height{
     height: 30px;
 }
-.carruselImg{
+
+/* .carruselImg{
     max-height: 75vh;
     object-fit: cover;
-}
+} */
 
 /* segunda section del index */
 .posicionDer{
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-start; */
-    /* align-items: flex-start; */
-    position: relative;
-    left: 50%;
-    /* min-height: 90vh; */
-    width: 50%;
-    /* padding-top: 25vh; */
-    /* padding-bottom: 5%; */
+    /* position: relative; */
+    /* left: 50%; */
+    /* width: 50%; */
     padding-left: 5%;
     padding-right: 0;
 }
@@ -507,13 +390,9 @@ a{
     justify-content: flex-start;
     align-items: flex-start;
     position: relative;
-    /* right: 50%; */
-    /* min-height: 90vh; */
     width: 100%;
-    /* padding-top: 25vh; */
-    /* padding-bottom: 5%; */
     padding-left: 0;
-    padding-right: 10%;
+    /* padding-right: 10%; */
 }
 
 .posicionDer h2, .posicionIzq h2{
@@ -538,7 +417,6 @@ a{
 }
 
 .posicionDer a, .posicionIzq a{
-    /* display: inline-block; */
     width: 125px;
     margin-top: 10px;
     text-transform: uppercase;
@@ -566,22 +444,6 @@ a{
     z-index: 100;
 }
 
-.footerBackground{
-    grid-area: footer;
-    width: 100%;
-    display: flex;
-    padding: 5px 5%;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    z-index: 2;
-}
-
-.separador-footer{
-    background-color: rgba(131, 131, 131, 0.4);
-    height: 1px;
-}
-
 .copyright{
     font-size: 1rem;
     font-weight: 200;
@@ -596,31 +458,22 @@ a{
     color: rgb(218, 218, 218);
 }
 
-/* .navRedesFooter{
-    display: none;
-} */
-/* .navRedesFooter img{
-    width: 24px;
-} */
 .navRedesFooter a{
     transition: filter 0.2s;
 }
+
 .navRedesFooter a:hover{
     filter: opacity(0.7);
     transition: filter 0.2s;
 }
+
 .icon-service{
-    /* width: 30px;
-    height: 30px;
-    padding: 5px; */
     font-size: 18px;
     color: white;
 }
-
 /* fin del footer */
 
 /* pág. de contacto y formulario */
-/* creo "secForm" para darle un espacio al parallax con respecto al formulario */
 .secForm{    
     display: flex;
     padding-bottom: 40px;
@@ -635,7 +488,6 @@ a{
     padding: 35px;
     background-color: rgba(0, 0, 0, 0.79);
 }
-
 
 .formInput{
     font-family: 'Libre Franklin', sans-serif;
@@ -652,7 +504,6 @@ a{
 .formInput:focus{
     outline: none;
 }
-
 
 .contenedorForm .label{
     font-size: 1.6rem;
@@ -701,14 +552,13 @@ a{
 /* fin de pág. de contacto y formulario */
 
 /* inicio de pag. Sobre mi */
-
-.sectionSobreMi{
+/* .sectionSobreMi{
     display: flex;
     align-items: center;
     text-align: center;
     width: 65%;
     min-height: 50vh;
-}
+} */
 
 .sectionSobreMi-- p{
     margin-top: 50px;
@@ -723,19 +573,9 @@ a{
     border-top: 1px solid white;
     border-bottom: 1px solid white;
 }
-
 /* fin de pag. Sobre mi */
 
 /* inicio de pag. Galería */
-/* .galeria{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-} */
-
 .parallaxSeis .centrarConFlex2 h2{
     width: 100%;
     margin-top: 30px;
@@ -760,10 +600,6 @@ a{
     overflow: hidden;
 }
 
-/* .gridFotos :nth-child(2){
-    align-self: center;
-} */
-
 .imagen1{
     grid-area: img1;
 }
@@ -786,18 +622,10 @@ a{
 .bloque2{
     position: relative;
     width: 100%;
-    display: flex; /* use esta propiedad porque quedaba un pequeño margen en el bottom y la única forma de sacarlo fue usando flex */
+    display: flex; 
     overflow: hidden; 
     cursor: pointer;
 }
-
-/* este es el cod que estaba antes */
-/* .bloque2:hover > .capa a{
-    transform: translateY(250%);
-    transition:  transform 0.2s ease-out, background-color 1s, color 1s;
-}  */
-/* aca termina */
-
 
 /* agrego un poco de margin para separar las fotos del título */
 .marginTop{     
@@ -814,9 +642,6 @@ a{
 
 .iframeBox{
     display: flex;
-    /* min-width: 55%;
-    flex: 70%;
-    min-height: 400px;     */
     justify-content: center;
     align-items: stretch;
     width: 560px;
@@ -831,7 +656,6 @@ a{
 }
 /* fin de pag. Galería */
 
-
 /* inicio de pag. Servicios */
 .parallaxSiete .centrarConFlex2 h2{
     width: 100%;
@@ -842,12 +666,6 @@ a{
     border-bottom: 1px solid white;
     text-align: left;
 } 
-
-/* .parallaxSiete .centrarConFlex2 :nth-child(even){
-    /* align-self: flex-start; */
-    /* border-bottom: 1px solid white; */
-
-
 
 .parallaxSiete .sectionMargin p{
     margin-top: 5px;
@@ -862,7 +680,6 @@ a{
 }
 /* fin de pag. Servicios */
 
-
 /* inicio de pag. Tienda */
 .boxTienda{
     display: flex;
@@ -871,8 +688,7 @@ a{
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: 54vh;
-        
+    height: 54vh;   
 }
 
 .bloque3{
@@ -883,29 +699,21 @@ a{
     position: relative;
     width: 34%;
     height: 90%;
-    /* margin: 15px 30px 50px 30px; */
-    /* margin-left: 30px;
-    margin-right: 30px; */
     background-color: rgba(0, 0, 0, 0.7);
-    
 }
 
 .bloque3 h2{
     font-size: 1.6rem;
     padding: 12px 0;
     margin-bottom: 0px;
-    /* padding-left: 20px;
-    padding-bottom: 30px; */
 }
 
 .bloque3 img{
-    /* width: 50%; */
     max-height: 50%;
     padding: 10px;
 }
 
 .box{
-    /* height: 10%; */
     display: flex;
     width: 100%;
     margin: 20px 0;
@@ -957,9 +765,7 @@ a{
 }
 
 .botonVolver a{
-    
     text-transform: uppercase;
-    
     padding: 6px 20px;
     font-size: 1.2rem;
     letter-spacing: 2px;
@@ -974,7 +780,7 @@ a{
 }
 
 /* ------- RESPONSIVE ------- */
-/* pantallas mayores a 768px y menores a 1024 porque la navegacion de los iconos de redes sociales no se adapta bien */
+/* pantallas mayores a 768px y menores a 1024 */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     html{
         font-size: 55%;
@@ -984,24 +790,8 @@ a{
         font-size: 2.8rem;
     }
 
-    .navRedes{
-        width: 15%; 
-    }
-    
-    .navRedes a img{
-        width: 18px;
-    }
-    
-    .navRedes img{
-        height: 18px;
-    }
-
     .formatoLogo{
         width: 120px;
-    }
-    
-    .nav ul{
-        width: 60%;
     }
 
     .parallaxDos {
@@ -1041,9 +831,6 @@ a{
     }
 
     .posicionDer{
-        /* position: initial; */
-        /* min-height: 85vh; */
-        /* width: 100%; */
         padding: 5%;
         background-color: rgba(0, 0, 0, 0.75);
     }
@@ -1075,26 +862,37 @@ a{
     }
     
     .bloque3 .box a{
-        
         margin-right: 25px;
         padding: 5px 10px;
         font-size: 1.2rem;
         letter-spacing: 1px;
         border: solid 1px white;
-        
     }
-
 } 
 
+@media only screen and (max-width: 992px) { 
+    .posicionIzq img{
+        display: none;
+    }
+    .posicionIzq h2{
+        text-align: center;
+    }
+    .posicionDer img{
+        display: none;
+    }
+    .posicionDer h2{
+        text-align: center;
+    }
+    .carruselImg{
+    max-height: 400px;
+    object-fit: cover;
+    }
+}
 /* pantallas menores a 767px */
 @media only screen and (max-width: 767px){
     .gridLayout{
         grid-template-rows: auto 15vh;
     }
-
-    /* html{
-        font-size: 55%;
-    } */
 
     h1{
         font-size: 2.8rem;
@@ -1146,14 +944,7 @@ a{
         letter-spacing: 0px;
     }
 
-    .footerBackground{
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: flex-start;
-    }
-
     .navRedesFooter{
-        display: block;
         align-self: center;
     }
 
@@ -1170,7 +961,6 @@ a{
         font-size: 3.3rem;
         letter-spacing: 2px;
         word-spacing: 2px;
-        /* margin-bottom: 8px; */
         border-bottom: 1px solid white;
     }
     
@@ -1199,7 +989,6 @@ a{
         display: none;
     } 
 
-  
     .bloque1 .capa, .bloque2 .capa{
         opacity: 1;
         background: rgba(0, 0, 0, 0);
@@ -1218,26 +1007,14 @@ a{
     .bloque1:hover > img, .bloque2:hover > img{
         transform: scale(1);
     }
-    
-
-    .flechaScrollDos{
-        display: none;
-    }
-
-    .galeriaResumen{
-        padding-bottom: 10vh;
-    }
-
-
 
     .parallaxDos {
         background-image: linear-gradient(0deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.45) 100%), url(../images/maxi_perfil_parallax.jpg);
-        min-height: 82vh; 
+        min-height: 85vh; 
     }
 
     .posicionDer{
         position: initial;
-        /* min-height: 85vh; */
         width: 100%;
         padding: 5%;
         background-color: rgba(0, 0, 0, 0.75);
@@ -1268,7 +1045,7 @@ a{
     
     .posicionDer a{
         width: 110px;
-        margin: 33px auto;
+        margin: 20px auto;
         padding: 6px 5px;
         font-size: 1.2rem;
         letter-spacing: 2px;  
@@ -1277,7 +1054,7 @@ a{
 
     /* sobre mi */
     .parallaxCuatro{
-        min-height: 82vh;
+        min-height: 85vh;
     }
 
     .sectionSobreMi{
@@ -1292,7 +1069,7 @@ a{
 
     /* formulario de contacto */ 
     .parallaxTres{
-        min-height: 82vh;
+        min-height: 85vh;
     }
 
     .secForm{
@@ -1309,7 +1086,7 @@ a{
 
     /* servicios */
     .parallaxSiete{
-        min-height: 82vh;
+        min-height: 85vh;
     }
 
     .parallaxSiete .centrarConFlex2 h2{
@@ -1333,7 +1110,7 @@ a{
 
     /* tienda */
     .parallaxCinco{
-        min-height: 82vh;
+        min-height: 85vh;
     }
 
     .boxTienda{
@@ -1387,8 +1164,7 @@ a{
     /* galeria */
     .parallaxSeis .centrarConFlex2 h2{
         font-size: 1.8rem;
-        width: 100%;
-        
+        width: 100%;  
     } 
     
     .gridFotos{
