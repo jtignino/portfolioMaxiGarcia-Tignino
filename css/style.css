@@ -189,17 +189,18 @@ a{
     font-size: 17px;
     color: rgba(255, 255, 255, 0.55);
 }
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link{
+    transition: color 0.2s;
+}
 
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
     color: rgba(255, 255, 255, 0.9);
-    transition: color 0.2s;
 }
 .navbar-dark .navbar-nav .nav-link i{
     transition: color 0.2s;
 }
 .navbar-dark .navbar-nav .nav-link i:hover{
     color: rgba(255, 255, 255, 0.9);
-    transition: color 0.2s;
 }
 
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show > .nav-link{
@@ -220,21 +221,104 @@ a{
 /* primera section del index */
 .parallax .centrarConFlex h1{
     padding-top: 15vh;
-    font-weight:600;
+    font-weight:500;
     font-size: 6rem;
     letter-spacing: 8px;
     word-spacing: 15px;
-    margin-bottom: 8px;
-    border-bottom: 3px solid white;
+    /* margin-bottom: 8px; */
+    margin-bottom: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
 }
 
 .subPrincipal{
     margin-bottom: 0px;
     padding-bottom: 8vh;
-    font-size: 2.6rem;
-    font-weight: 400;
-    letter-spacing: 8px;
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: 6px;
     word-spacing: 10px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+}
+
+h1{
+    animation: efecto-h1 8s 0s ease-in-out both;
+}
+h3{
+    animation: efecto-h3 8s 0s ease-in-out both;
+}
+.linea-hor{
+    width: 100%;
+    height: 0.2rem;
+    background-color: white;
+    border-radius: 9999px;
+    animation: un-efecto linear 2s;
+    animation-delay: 0s;
+}
+
+@keyframes un-efecto{
+    0%{width: 0px;}
+    /* 70%{width: 0px;} */
+    70%{width: 100%;}
+}
+@keyframes move{
+    100%{transform: unset;}
+}
+
+@keyframes efecto-h1{
+    10%{
+        filter: blur(0px);
+        opacity: 1;
+    }
+    40%{
+        filter: blur(16px);
+        opacity: 0;
+    }
+    75%, 100%{
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes efecto-h3{
+    10%{
+        filter: blur(16px);
+    }
+    45%{
+        filter: blur(0px);
+        opacity: 1;
+    }
+    70%, 80%{
+        filter: blur(16px);
+        opacity: 0;
+        transform: translateY(0%) scale(1);
+        letter-spacing: 6px;
+    }
+    90%, 100%{
+        filter: blur(0px);
+        opacity: 1;
+        transform: translateY(92%) scale(0.6);
+        letter-spacing: 12px;
+    }
+}
+@keyframes efecto-h33{
+    0%, 20%{
+        filter: blur(16px);
+        opacity: 0;
+    }
+    40%, 80%{
+        filter: blur(0px);
+        opacity: 1;
+    }
+    100%{
+        filter: blur(0px);
+        opacity: 1;
+        transform: translateY(90%) scale(0.55);
+        
+    }
 }
 
 .parallax .centrarConFlex p{
@@ -251,6 +335,7 @@ a{
 .divFlecha{
     position: absolute;
     bottom: 1vh;
+    --animate-delay: 8s;
 }
 
 .flechaScrollUno{
@@ -297,22 +382,17 @@ a{
     padding-bottom: 10vh;
 }
 
-.bloque1{ /* sobreescribi */
-    display: flex;
-    position: relative;
-    min-width: 100px;
-    flex: 400px;
-    overflow: hidden; 
-    cursor: pointer; 
-}
-
-.bloque1 img, .bloque2 img{
+.bloque2 img{
     width: 100%;
     object-fit: cover;
     transition: transform 0.2s ease-out;
 }
 
-.bloque1 .capa, .bloque2 .capa{
+.bloque2:hover > img{
+    transform: scale(1.1);
+}
+
+.bloque2 .capa{
     position: absolute;
     top: 0;
     left: 0;
@@ -326,42 +406,31 @@ a{
     transition: opacity 0.2s;
 }
 
-.bloque1 .capa a, .bloque2 .capa a{
+.bloque2:hover > .capa{
+    opacity: 1;
+}
+
+.bloque2 .capa a{
     text-align: center;
     text-transform: uppercase;
     padding: 5px 18px;
     font-size: 1.4rem;
     letter-spacing: 2px;
     border: solid 1px white;
-    transition: transform 0.2s ease-out; 
+    transition: background-color 0.2s ease-out, color 0.2s ease-out; 
 }
 
-.bloque1:hover > img, .bloque2:hover > img{
-    transform: scale(1.1);
-    transition: transform 0.2s ease-out;
+.bloque2 .capa a:hover{
+    background-color: white;
+    color: black;
 }
 
-.bloque1:hover > .capa, .bloque2:hover > .capa{
-    opacity: 1;
-    transition: opacity 0.2s;
-}
-
-.img-zoom:hover > div a img{
-    transform: scale(1.1);
-    transition: transform 0.2s ease-out;
-}
 .img-zoom > div a img{
     transition: transform 0.2s ease-out;
 }
 
-.bloque1:hover > .capa a{
-    transition: background-color 0.5s, color 0.5s;
-}
-
-.bloque1 > .capa a:hover, .bloque2 > .capa a:hover{
-    background-color: white;
-    color: black;
-    transition: background-color 0.5s, color 0.5s;
+.img-zoom:hover > div a img{
+    transform: scale(1.1) rotate(2deg);
 }
 
 .carousel-indicators-height{
@@ -382,6 +451,7 @@ a{
     /* width: 50%; */
     padding-left: 5%;
     padding-right: 0;
+    animation: animacion-der 1.5s -0.5s ease-out;
 }
 
 .posicionIzq{
@@ -393,6 +463,35 @@ a{
     width: 100%;
     padding-left: 0;
     /* padding-right: 10%; */
+    animation: animacion-izq 1.5s -0.5s ease-out;
+}
+
+@keyframes animacion-izq{
+    0%, 50%{
+        transform: translate(-100%);
+        opacity: 0;
+    }
+    70%{
+        opacity: 0.1;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animacion-der{
+    0%, 50%{
+        transform: translate(100%);
+        opacity: 0;
+    }
+    70%{
+        opacity: 0.1;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
 }
 
 .posicionDer h2, .posicionIzq h2{
@@ -430,9 +529,7 @@ a{
 
 .posicionDer a:hover, .posicionIzq a:hover{
     background: white;
-    color: black;
-    transition: background-color 0.5s, color 0.5s;
-    
+    color: black;    
 }
 /* fin de la segunda section */
 
@@ -464,7 +561,6 @@ a{
 
 .navRedesFooter a:hover{
     filter: opacity(0.7);
-    transition: filter 0.2s;
 }
 
 .icon-service{
@@ -546,7 +642,6 @@ a{
 
 .contenedorForm .contenedorBotones .boton:hover{
     background: white;
-    transition: background-color 0.5s;
     color: black;
 }
 /* fin de pág. de contacto y formulario */
@@ -737,12 +832,11 @@ a{
     font-size: 1.2rem;
     letter-spacing: 2px;
     border: solid 1px white;
-    transition: background-color 0.5s;  
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;  
 }
 
 .bloque3 .box a:hover{
     background: white;
-    transition: background-color 0.5s;
     color: black;
 }
 /* fin de pag. Tienda */
@@ -770,12 +864,11 @@ a{
     font-size: 1.2rem;
     letter-spacing: 2px;
     border: solid 1px white;
-    transition: background-color 0.5s;  
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;  
 }
 
 .botonVolver a:hover{
     background: white;
-    transition: background-color 0.5s;
     color: black;
 }
 
@@ -884,8 +977,8 @@ a{
         text-align: center;
     }
     .carruselImg{
-    max-height: 400px;
-    object-fit: cover;
+        max-height: 400px;
+        object-fit: cover;
     }
 }
 /* pantallas menores a 767px */
@@ -961,7 +1054,6 @@ a{
         font-size: 3.3rem;
         letter-spacing: 2px;
         word-spacing: 2px;
-        border-bottom: 1px solid white;
     }
     
     .subPrincipal{
@@ -989,13 +1081,13 @@ a{
         display: none;
     } 
 
-    .bloque1 .capa, .bloque2 .capa{
+    .bloque2 .capa{
         opacity: 1;
         background: rgba(0, 0, 0, 0);
         align-items: flex-end;
     }
 
-    .bloque1 .capa a, .bloque2 .capa a{
+    .bloque2 .capa a{
         width: 105px;
         padding: 4px 3px;
         margin-bottom: 20px;
@@ -1004,7 +1096,7 @@ a{
         border-bottom: 1px solid white; 
     }
     
-    .bloque1:hover > img, .bloque2:hover > img{
+    .bloque2:hover > img{
         transform: scale(1);
     }
 
@@ -1034,8 +1126,8 @@ a{
     
     .posicionDer p, .posicionIzq p{
         font-size: 1.4rem;
-        letter-spacing: 1px;
-        line-height: 19px;
+        letter-spacing: 0.1rem;
+        line-height: 2rem;
         text-align: justify;
     }
     
@@ -1063,6 +1155,9 @@ a{
 
     .sectionSobreMi-- p{
         text-align: justify;
+        font-size: 1.4rem;
+        letter-spacing: 0.1rem;
+        line-height: 2rem;
     }
 
     /* fin de sobre mi */
@@ -1095,8 +1190,8 @@ a{
         
     } 
     .parallaxSiete .sectionMargin p{
-        letter-spacing: 1px;
-        line-height: 19px;
+        letter-spacing: 0.1rem;
+        line-height: 2rem;
         width: 90%;
         margin: 15px 0;
         text-align: justify;
