@@ -1,0 +1,17 @@
+.gridLayout{
+    display: grid;
+    grid-template-rows: auto 10vh;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "main"
+    "footer";
+    gap: 0px;    
+}
+
+main{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+}

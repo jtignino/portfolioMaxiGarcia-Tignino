@@ -1,0 +1,49 @@
+header {
+    .headerBackground {
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 2;
+    }
+
+    nav {
+        a {
+            .formatoLogo {
+                width: 120px;
+            }
+
+            .icon-service-bag {
+                font-size: 17px;
+                color: rgba(255, 255, 255, 0.55);
+            }
+        }
+    }
+}
+
+.navbar-dark {
+    .navbar-nav {
+        .nav-link {
+            transition: color 0.2s;
+
+            i {
+                transition: color 0.2s;
+
+                &:hover {
+                    color: rgba(255, 255, 255, 0.9);
+                }
+            }
+
+            &:focus {
+                color: rgba(255, 255, 255, 0.9);
+            }
+
+            &:hover {
+                color: rgba(255, 255, 255, 0.9);
+            }
+        }
+    }
+}
+
+.separador-navbar {
+    width: 1px;
+    height: 19px;
+    background-color: rgba(255, 255, 255, 0.55);
+}

@@ -190,16 +190,12 @@ a{
     color: rgba(255, 255, 255, 0.55);
 }
 
-.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
-    color: rgba(255, 255, 255, 0.9);
-    transition: color 0.2s;
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link i{
+    transition: color 0.2s;    
 }
-.navbar-dark .navbar-nav .nav-link i{
-    transition: color 0.2s;
-}
-.navbar-dark .navbar-nav .nav-link i:hover{
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link i:hover{
     color: rgba(255, 255, 255, 0.9);
-    transition: color 0.2s;
 }
 
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show > .nav-link{
@@ -212,9 +208,6 @@ a{
     background-color: rgba(255, 255, 255, 0.55);
 }
 
-.menuDesplegable{
-    display: none;
-}
 /* navbar */
 
 /* primera section del index */
@@ -560,7 +553,7 @@ a{
     min-height: 50vh;
 } */
 
-.sectionSobreMi-- p{
+.sectionSobreMi2 p{
     margin-top: 50px;
     margin-bottom: 50px;
     padding-top: 20px;
@@ -1061,7 +1054,7 @@ a{
         width: 80%;
     }
 
-    .sectionSobreMi-- p{
+    .sectionSobreMi2 p{
         text-align: justify;
     }
 
