@@ -53,6 +53,11 @@ a {
   flex-direction: column;
   align-items: center; }
 
+.sectionMargin {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+
 .posicionRelativa {
   position: relative; }
 
@@ -216,6 +221,27 @@ header nav a .icon-service-bag {
   border-top: 1px solid white;
   border-bottom: 1px solid white; }
 
+.parallaxSiete .centrarConFlex2 h2 {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  padding-bottom: 4px;
+  font-size: 2.2rem;
+  border-bottom: 1px solid white;
+  text-align: left; }
+
+.parallaxSiete .centrarConFlex2 p {
+  margin-top: 5px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  font-weight: 300;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-align: justify;
+  color: #e4e4e4; }
+
 .boxTienda {
   display: flex;
   flex-direction: row;
@@ -322,3 +348,27 @@ header nav a .icon-service-bag {
   .checkboxInfo label {
     font-size: 1.2rem;
     padding-left: 5px; }
+
+.parallaxOcho .centrarConFlex2 h4 {
+  width: 100%;
+  margin-top: 5px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-weight: 300;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  line-height: 20px;
+  border-bottom: 1px solid white; }
+
+.botonVolver {
+  margin-top: 40px; }
+  .botonVolver a {
+    text-transform: uppercase;
+    padding: 6px 20px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    border: solid 1px white;
+    transition: background-color 0.5s, color 0.5s; }
+    .botonVolver a:hover {
+      background: white;
+      color: black; }
