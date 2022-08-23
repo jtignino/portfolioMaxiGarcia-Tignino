@@ -10,12 +10,11 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   font-size: 62.5%;
   font-style: normal;
   font-family: 'Poppins', sans-serif;
-  color: white;
-  /* declaro el color acá para ahorrar código porque sé que voy a utilizar casi todo en blanco */ }
+  color: white; }
 
 h1 {
   padding-top: 110px; }
@@ -45,8 +44,8 @@ a {
 .centrarConFlex {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
 
 .centrarConFlex2 {
   display: flex;
@@ -57,6 +56,9 @@ a {
   width: 90%;
   margin-left: auto;
   margin-right: auto; }
+
+.sectionHeight {
+  min-height: 100vh; }
 
 .posicionRelativa {
   position: relative; }
@@ -70,7 +72,7 @@ a {
 .min-vh-90 {
   min-height: 90vh; }
 
-.parallax {
+.parallax, .parallaxDos, .parallaxTres, .parallaxCuatro, .parallaxCinco, .parallaxSeis, .parallaxSiete, .parallaxOcho {
   background-color: black;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-1.jpg);
   background-attachment: fixed;
@@ -80,67 +82,25 @@ a {
   min-height: 90vh; }
 
 .parallaxDos {
-  background-color: black;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-2.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 90vh; }
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-2.jpg); }
 
 .parallaxTres {
-  background-color: black;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-3.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 90vh; }
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-3.jpg); }
 
 .parallaxCuatro {
-  background-color: black;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-4.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 90vh; }
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-4.jpg); }
 
 .parallaxCinco {
-  background-color: black;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-5.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 90vh; }
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-5.jpg); }
 
 .parallaxSeis {
-  background-color: black;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-6.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 90vh; }
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-6.jpg); }
 
 .parallaxSiete {
-  background-color: black;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-7.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 90vh; }
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-7.jpg); }
 
 .parallaxOcho {
-  background-color: black;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-1.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 90vh; }
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-1.jpg); }
 
 .gridLayout {
   display: grid;
@@ -167,9 +127,9 @@ header nav a .icon-service-bag {
   color: rgba(255, 255, 255, 0.55); }
 
 .navbar-dark .navbar-nav .nav-link {
-  transition: color 0.2s; }
+  transition: color 0.5s; }
   .navbar-dark .navbar-nav .nav-link i {
-    transition: color 0.2s; }
+    transition: color 0.5s; }
     .navbar-dark .navbar-nav .nav-link i:hover {
       color: rgba(255, 255, 255, 0.9); }
   .navbar-dark .navbar-nav .nav-link:focus {
@@ -185,6 +145,7 @@ header nav a .icon-service-bag {
 .footer {
   width: 100%;
   background-color: black;
+  background-image: linear-gradient(45deg, black 0%, #0a0000 50%, black 100%);
   z-index: 100; }
 
 .copyright {
@@ -208,6 +169,118 @@ header nav a .icon-service-bag {
   font-size: 18px;
   color: white; }
 
+.parallax .centrarConFlex h1, .parallaxDos .centrarConFlex h1, .parallaxTres .centrarConFlex h1, .parallaxCuatro .centrarConFlex h1, .parallaxCinco .centrarConFlex h1, .parallaxSeis .centrarConFlex h1, .parallaxSiete .centrarConFlex h1, .parallaxOcho .centrarConFlex h1 {
+  padding-top: 15vh;
+  font-weight: 600;
+  font-size: 6rem;
+  letter-spacing: 8px;
+  word-spacing: 15px;
+  margin-bottom: 8px;
+  border-bottom: 3px solid white; }
+
+.parallax .centrarConFlex p, .parallaxDos .centrarConFlex p, .parallaxTres .centrarConFlex p, .parallaxCuatro .centrarConFlex p, .parallaxCinco .centrarConFlex p, .parallaxSeis .centrarConFlex p, .parallaxSiete .centrarConFlex p, .parallaxOcho .centrarConFlex p {
+  max-width: 65%;
+  padding-bottom: 10vh;
+  font-weight: 100;
+  font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  line-height: 25px;
+  text-align: center; }
+
+.subPrincipal {
+  margin-bottom: 0px;
+  padding-bottom: 8vh;
+  font-size: 2.6rem;
+  font-weight: 400;
+  letter-spacing: 8px;
+  word-spacing: 10px; }
+
+.divFlecha {
+  position: absolute;
+  bottom: 1vh; }
+
+.flechaScrollUno {
+  width: 45px;
+  padding: 10px 0 0px 0; }
+
+/* acá comienzo a darle formato al resumen de fotos */
+.parallax .centrarConFlex h2, .parallaxDos .centrarConFlex h2, .parallaxTres .centrarConFlex h2, .parallaxCuatro .centrarConFlex h2, .parallaxCinco .centrarConFlex h2, .parallaxSeis .centrarConFlex h2, .parallaxSiete .centrarConFlex h2, .parallaxOcho .centrarConFlex h2 {
+  margin-bottom: 4px;
+  padding-top: 14vh;
+  font-size: 4rem;
+  letter-spacing: 8px;
+  word-spacing: 10px;
+  border-bottom: 2px solid white; }
+
+.subSecundario {
+  margin-bottom: 9vh;
+  font-size: 1.8rem;
+  letter-spacing: 7px;
+  word-spacing: 7px; }
+
+.img-zoom div a img {
+  transition: transform 0.2s ease-out; }
+
+.img-zoom:hover div a img {
+  transform: scale(1.1); }
+
+.carousel-indicators-height {
+  height: 30px; }
+
+/* segunda seccion del index */
+.posicionDer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 0; }
+
+.posicionIzq {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  padding-left: 0; }
+
+.posicionDer h2,
+.posicionIzq h2 {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0px;
+  text-align: left; }
+
+.posicionDer p,
+.posicionIzq p {
+  margin: 10px 0px;
+  font-weight: 100;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.1rem;
+  line-height: 2.4rem; }
+
+.posicionDer img,
+.posicionIzq img {
+  width: 45px;
+  height: 2px; }
+
+.posicionDer a,
+.posicionIzq a {
+  width: 125px;
+  margin-top: 10px;
+  padding: 5px 18px;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  text-align: center;
+  border: solid 1px white;
+  text-transform: uppercase;
+  transition: background-color 0.5s, color 0.5s; }
+  .posicionDer a:hover,
+  .posicionIzq a:hover {
+    background: white;
+    color: black; }
+
 .sectionSobreMi2 p {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -220,6 +293,104 @@ header nav a .icon-service-bag {
   line-height: 24px;
   border-top: 1px solid white;
   border-bottom: 1px solid white; }
+
+.bloqueImgGaleria {
+  position: relative;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer; }
+  .bloqueImgGaleria img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease-out; }
+  .bloqueImgGaleria .capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.2s; }
+    .bloqueImgGaleria .capa a {
+      text-align: center;
+      text-transform: uppercase;
+      padding: 5px 18px;
+      font-size: 1.4rem;
+      letter-spacing: 2px;
+      border: solid 1px white;
+      transition: background-color 0.5s, color 0.5s; }
+      .bloqueImgGaleria .capa a:hover {
+        background-color: white;
+        color: black; }
+  .bloqueImgGaleria:hover img {
+    transform: scale(1.1); }
+  .bloqueImgGaleria:hover .capa {
+    opacity: 1;
+    transition: opacity 0.2s; }
+
+.parallaxSeis .centrarConFlex2 h2 {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  padding-bottom: 4px;
+  font-size: 2.2rem;
+  border-bottom: 1px solid white;
+  text-align: left; }
+
+.gridFotos {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "img1 img2 img3" "img4 img2 img5" "img4 img6 img5";
+  gap: 0px;
+  justify-items: center;
+  align-items: stretch;
+  overflow: hidden; }
+
+.imagen1 {
+  grid-area: img1; }
+
+.imagen2 {
+  grid-area: img2; }
+
+.imagen3 {
+  grid-area: img3; }
+
+.imagen4 {
+  grid-area: img4; }
+
+.imagen5 {
+  grid-area: img5; }
+
+.imagen6 {
+  grid-area: img6; }
+
+.marginTop {
+  margin-top: 40px; }
+
+.paddingBottom {
+  padding-bottom: 40px; }
+
+.bordeInf {
+  border-bottom: 1px solid white; }
+
+.iframeBox {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 560px;
+  max-width: 100%;
+  height: 315px; }
+
+.iframe {
+  width: 100%;
+  object-fit: cover;
+  padding: 2% 0; }
 
 .parallaxSiete .centrarConFlex2 h2 {
   width: 100%;
@@ -372,3 +543,282 @@ header nav a .icon-service-bag {
     .botonVolver a:hover {
       background: white;
       color: black; }
+
+/* ------- RESPONSIVE ------- */
+/* pantallas mayores a 768px y menores a 1024 */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 55%; }
+  h2 {
+    font-size: 2.8rem; }
+  .formatoLogo {
+    width: 120px; }
+  .parallaxDos {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/maxi_perfil_parallax.jpg); }
+  .copyright {
+    letter-spacing: 0px; }
+  .contamediact {
+    letter-spacing: 0px; }
+  /* index */
+  .divFlecha {
+    display: none; }
+  .posicionDer {
+    padding: 5%;
+    background-color: rgba(0, 0, 0, 0.75); }
+  /* fin de index */
+  /* galeria */
+  .bloqueImgGaleria .capa {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0);
+    align-items: flex-end; }
+    .bloqueImgGaleria .capa a {
+      width: 105px;
+      padding: 4px 3px;
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+      border: none;
+      border-bottom: 1px solid white; }
+  .bloqueImgGaleria:hover > img {
+    transform: scale(1); }
+  /* fin de galeria */
+  /* contacto */
+  .contenedorForm {
+    min-width: 35%;
+    max-width: 50%; }
+  /* tienda */
+  .bloque3 {
+    width: 40%; }
+    .bloque3 img {
+      max-width: 80%; }
+    .bloque3 .box h4 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      margin-left: 25px;
+      padding: 5px 0px;
+      font-size: 1.5rem;
+      letter-spacing: 0px;
+      transition: background-color 0.5s; }
+    .bloque3 .box a {
+      margin-right: 25px;
+      padding: 5px 10px;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      border: solid 1px white; } }
+
+@media only screen and (max-width: 992px) {
+  .posicionIzq img {
+    display: none; }
+  .posicionIzq h2 {
+    text-align: center; }
+  .posicionDer img {
+    display: none; }
+  .posicionDer h2 {
+    text-align: center; }
+  .carruselImg {
+    max-height: 400px;
+    object-fit: cover; } }
+
+/* pantallas menores a 767px */
+@media only screen and (max-width: 767px) {
+  .gridLayout {
+    display: grid;
+    grid-template-rows: auto 15vh;
+    grid-template-columns: 1fr;
+    grid-template-areas: "main" "footer";
+    gap: 0px; }
+  h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    word-spacing: 2px; }
+  h2 {
+    font-size: 2.8rem; }
+  /* header */
+  header .headerBackground {
+    background: black; }
+  .navRedes {
+    display: none; }
+  .nav {
+    justify-content: center; }
+    .nav ul {
+      flex-direction: column; }
+  .formatoLogo {
+    position: relative; }
+  .menuDesplegable {
+    display: block;
+    position: absolute;
+    right: 5%; }
+  /* fin de header */
+  /* footer */
+  .copyright {
+    font-size: 1.1rem;
+    letter-spacing: 0px; }
+  .contact {
+    font-size: 1.1rem;
+    letter-spacing: 0px; }
+  .navRedesFooter {
+    align-self: center; }
+    .navRedesFooter a img {
+      width: 24px;
+      margin: 10px 8px; }
+  /* fin de footer */
+  /* index */
+  .parallax .centrarConFlex h1, .parallaxDos .centrarConFlex h1, .parallaxTres .centrarConFlex h1, .parallaxCuatro .centrarConFlex h1, .parallaxCinco .centrarConFlex h1, .parallaxSeis .centrarConFlex h1, .parallaxSiete .centrarConFlex h1, .parallaxOcho .centrarConFlex h1 {
+    padding-top: 25vh;
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    border-bottom: 1px solid white; }
+  .parallax .centrarConFlex p, .parallaxDos .centrarConFlex p, .parallaxTres .centrarConFlex p, .parallaxCuatro .centrarConFlex p, .parallaxCinco .centrarConFlex p, .parallaxSeis .centrarConFlex p, .parallaxSiete .centrarConFlex p, .parallaxOcho .centrarConFlex p {
+    max-width: 90%;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    line-height: 19px; }
+  .parallax .centrarConFlex h2, .parallaxDos .centrarConFlex h2, .parallaxTres .centrarConFlex h2, .parallaxCuatro .centrarConFlex h2, .parallaxCinco .centrarConFlex h2, .parallaxSeis .centrarConFlex h2, .parallaxSiete .centrarConFlex h2, .parallaxOcho .centrarConFlex h2 {
+    display: none; }
+  .subPrincipal {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    word-spacing: 2px; }
+  .flechaScrollUno {
+    display: none; }
+  .subSecundario {
+    display: none; }
+  .bloqueImgGaleria .capa {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0);
+    align-items: flex-end; }
+    .bloqueImgGaleria .capa a {
+      width: 105px;
+      padding: 4px 3px;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+      border: none;
+      border-bottom: 1px solid white; }
+  .bloqueImgGaleria:hover > img {
+    transform: scale(1); }
+  .parallaxDos {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/maxi_perfil_parallax.jpg);
+    min-height: 85vh; }
+  .posicionDer {
+    position: initial;
+    width: 100%;
+    padding: 5%;
+    background-color: rgba(0, 0, 0, 0.75); }
+    .posicionDer h2 {
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+      word-spacing: 2px;
+      text-align: center; }
+  .posicionIzq h2 {
+    font-size: 2.4rem; }
+  .posicionDer p,
+  .posicionIzq p {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    line-height: 19px;
+    text-align: justify; }
+  .posicionDer img {
+    display: none; }
+  .posicionDer a {
+    width: 110px;
+    margin: 20px auto;
+    padding: 6px 5px;
+    font-size: 1.2rem;
+    letter-spacing: 2px; }
+  /* fin de index */
+  /* sobre mi */
+  .parallaxCuatro {
+    min-height: 85vh; }
+  .sectionSobreMi {
+    width: 80%; }
+    .sectionSobreMi p {
+      text-align: justify; }
+  /* fin de sobre mi */
+  /* formulario de contacto */
+  .parallaxTres {
+    min-height: 85vh; }
+  .secForm {
+    min-height: 60vh;
+    align-items: center; }
+  .contenedorForm {
+    min-width: 90%;
+    max-width: 90%;
+    height: 80%; }
+  /* fin de formulario de contacto */
+  /* servicios */
+  .parallaxSiete {
+    min-height: 85vh; }
+    .parallaxSiete .centrarConFlex2 h2 {
+      font-size: 1.8rem;
+      width: 90%; }
+    .parallaxSiete .sectionMargin p {
+      letter-spacing: 1px;
+      line-height: 19px;
+      width: 90%;
+      margin: 15px 0;
+      text-align: justify;
+      padding: 0px; }
+    .parallaxSiete .sectionMargin:nth-child(7) {
+      padding-bottom: 25px; }
+  /* fin de servicios */
+  /* tienda */
+  .parallaxCinco {
+    min-height: 85vh; }
+  .boxTienda {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: auto; }
+  .bloque3 {
+    width: 90%;
+    height: 90%; }
+    .bloque3 img {
+      width: 50%; }
+    .bloque3 .box {
+      flex-direction: column;
+      width: 100%;
+      margin: 12px 0 15px 0;
+      row-gap: 10px;
+      align-items: center;
+      justify-content: space-between; }
+      .bloque3 .box h4 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        margin-left: 0px;
+        padding: 5px 0px;
+        font-size: 1.5rem;
+        letter-spacing: 0px;
+        transition: background-color 0.5s; }
+      .bloque3 .box a {
+        margin-right: 0px;
+        padding: 5px 10px;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        border: initial;
+        border-bottom: 1px solid white; }
+  /* fin de tienda */
+  /* galeria */
+  .parallaxSeis .centrarConFlex2 h2 {
+    font-size: 1.8rem;
+    width: 100%; }
+  .gridFotos {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "img1" "img2" "img2" "img3" "img4" "img4" "img6" "img5" "img5";
+    row-gap: 15px; }
+  .iframeBox {
+    width: 100%; }
+  /* fin de galeria */
+  /* carrito de compras */
+  .parallaxOcho {
+    min-height: 85vh; } }
+
+@media only screen and (max-width: 425px) {
+  /* contacto */
+  .parallaxTres {
+    background-position-x: right; } }

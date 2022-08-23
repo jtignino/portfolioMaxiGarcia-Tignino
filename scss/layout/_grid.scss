@@ -1,11 +1,5 @@
 .gridLayout{
-    display: grid;
-    grid-template-rows: auto 10vh;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "main"
-    "footer";
-    gap: 0px;    
+    @include grid-layout(auto, 10vh, 1fr);
 }
 
 main{

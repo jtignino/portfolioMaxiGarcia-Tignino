@@ -1,0 +1,9 @@
+@mixin grid-layout($row1, $row2, $column) {
+    display: grid;
+    grid-template-rows: $row1 $row2;
+    grid-template-columns: $column;
+    grid-template-areas:
+    "main"
+    "footer";
+    gap: 0px;    
+}

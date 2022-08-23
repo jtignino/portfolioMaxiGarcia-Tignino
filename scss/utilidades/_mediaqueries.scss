@@ -1,0 +1,472 @@
+/* ------- RESPONSIVE ------- */
+/* pantallas mayores a 768px y menores a 1024 */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 55%;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    .formatoLogo {
+        width: 120px;
+    }
+
+    .parallaxDos {
+        background-image: map-get($colores, gradiente-parallax), url(../images/maxi_perfil_parallax.jpg);
+    }
+
+    .copyright {
+        letter-spacing: 0px;
+    }
+
+    .contamediact {
+        letter-spacing: 0px;
+    }
+
+    /* index */
+    .divFlecha {
+        display: none;
+    }
+
+    .posicionDer {
+        padding: 5%;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+
+    /* fin de index */
+
+    /* galeria */
+    .bloqueImgGaleria {
+        .capa {
+            opacity: 1;
+            background: rgba(0, 0, 0, 0);
+            align-items: flex-end;
+
+            a {
+                width: 105px;
+                padding: 4px 3px;
+                margin-bottom: 20px;
+                font-size: 1.4rem;
+                border: none;
+                border-bottom: 1px solid white;
+            }
+        }
+
+        &:hover>img {
+            transform: scale(1);
+        }
+    }
+
+    /* fin de galeria */
+
+    /* contacto */
+    .contenedorForm {
+        min-width: 35%;
+        max-width: 50%;
+    }
+
+    /* tienda */
+    .bloque3 {
+        width: 40%;
+
+        img {
+            max-width: 80%;
+        }
+
+        .box {
+            h4 {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                margin-left: 25px;
+                padding: 5px 0px;
+                font-size: 1.5rem;
+                letter-spacing: 0px;
+                transition: background-color 0.5s;
+            }
+
+            a {
+                margin-right: 25px;
+                padding: 5px 10px;
+                font-size: 1.2rem;
+                letter-spacing: 1px;
+                border: solid 1px white;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .posicionIzq {
+        img {
+            display: none;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .posicionDer {
+        img {
+            display: none;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .carruselImg {
+        max-height: 400px;
+        object-fit: cover;
+    }
+}
+
+/* pantallas menores a 767px */
+@media only screen and (max-width: 767px) {
+    .gridLayout {
+        @include grid-layout(auto, 15vh, 1fr);
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    /* header */
+    header{
+       .headerBackground{
+        background: rgb(0, 0, 0);
+       } 
+    }
+
+    .navRedes {
+        display: none;
+    }
+
+    .nav {
+        justify-content: center;
+
+        ul {
+            flex-direction: column;
+        }
+    }
+
+    .formatoLogo {
+        position: relative;
+    }
+
+    .menuDesplegable {
+        display: block;
+        position: absolute;
+        right: 5%;
+    }
+
+    /* fin de header */
+
+    /* footer */
+    .copyright {
+        font-size: 1.1rem;
+        letter-spacing: 0px;
+    }
+
+    .contact {
+        font-size: 1.1rem;
+        letter-spacing: 0px;
+    }
+
+    .navRedesFooter {
+        align-self: center;
+
+        a {
+            img {
+                width: 24px;
+                margin: 10px 8px;
+            }
+        }
+    }
+
+    /* fin de footer */
+
+    /* index */
+    .parallax {
+        .centrarConFlex {
+            h1 {
+                padding-top: 25vh;
+                font-weight: 600;
+                font-size: 3rem;
+                letter-spacing: 2px;
+                word-spacing: 2px;
+                border-bottom: 1px solid white;
+            }
+
+            p {
+                max-width: 90%;
+                font-size: 1.4rem;
+                letter-spacing: 1px;
+                line-height: 19px;
+            }
+
+            h2 {
+                display: none;
+            }
+        }
+    }
+
+    .subPrincipal {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+    }
+
+    .flechaScrollUno {
+        display: none;
+    }
+
+    .subSecundario {
+        display: none;
+    }
+
+    .bloqueImgGaleria {
+        .capa {
+            opacity: 1;
+            background: rgba(0, 0, 0, 0);
+            align-items: flex-end;
+
+            a {
+                width: 105px;
+                padding: 4px 3px;
+                margin-bottom: 20px;
+                font-size: 1.2rem;
+                border: none;
+                border-bottom: 1px solid white;
+            }
+        }
+
+        &:hover>img {
+            transform: scale(1);
+        }
+    }
+
+    .parallaxDos {
+        background-image: map-get($colores, gradiente-parallax), url(../images/maxi_perfil_parallax.jpg);
+        min-height: 85vh;
+    }
+
+    .posicionDer {
+        position: initial;
+        width: 100%;
+        padding: 5%;
+        background-color: rgba(0, 0, 0, 0.75);
+
+        h2 {
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            text-align: center;
+        }
+    }
+
+    .posicionIzq h2 {
+        font-size: 2.4rem;
+    }
+
+    .posicionDer,
+    .posicionIzq {
+        p {
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            line-height: 19px;
+            text-align: justify;
+        }
+
+    }
+
+    .posicionDer {
+        img {
+            display: none;
+        }
+
+        a {
+            width: 110px;
+            margin: 20px auto;
+            padding: 6px 5px;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+        }
+    }
+
+    /* fin de index */
+
+    /* sobre mi */
+    .parallaxCuatro {
+        min-height: 85vh;
+    }
+
+    .sectionSobreMi {
+        width: 80%;
+
+        p {
+            text-align: justify;
+        }
+    }
+
+    /* fin de sobre mi */
+
+    /* formulario de contacto */
+    .parallaxTres {
+        min-height: 85vh;
+    }
+
+    .secForm {
+        min-height: 60vh;
+        align-items: center;
+    }
+
+    .contenedorForm {
+        min-width: 90%;
+        max-width: 90%;
+        height: 80%;
+    }
+
+    /* fin de formulario de contacto */
+
+    /* servicios */
+    .parallaxSiete {
+        min-height: 85vh;
+
+        .centrarConFlex2 {
+            h2 {
+                font-size: 1.8rem;
+                width: 90%;
+            }
+        }
+
+        .sectionMargin {
+            p {
+                letter-spacing: 1px;
+                line-height: 19px;
+                width: 90%;
+                margin: 15px 0;
+                text-align: justify;
+                padding: 0px;
+            }
+
+            &:nth-child(7) {
+                padding-bottom: 25px;
+            }
+        }
+    }
+
+
+    /* fin de servicios */
+
+    /* tienda */
+    .parallaxCinco {
+        min-height: 85vh;
+    }
+
+    .boxTienda {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        row-gap: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+        height: auto;
+    }
+
+    .bloque3 {
+        width: 90%;
+        height: 90%;
+
+        img {
+            width: 50%;
+        }
+
+        .box {
+            flex-direction: column;
+            width: 100%;
+            margin: 12px 0 15px 0;
+            row-gap: 10px;
+            align-items: center;
+            justify-content: space-between;
+
+            h4 {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                margin-left: 0px;
+                padding: 5px 0px;
+                font-size: 1.5rem;
+                letter-spacing: 0px;
+                transition: background-color 0.5s;
+            }
+
+            a {
+                margin-right: 0px;
+                padding: 5px 10px;
+                font-size: 1.2rem;
+                letter-spacing: 1px;
+                border: initial;
+                border-bottom: 1px solid white;
+            }
+        }
+    }
+
+    /* fin de tienda */
+
+    /* galeria */
+    .parallaxSeis {
+        .centrarConFlex2 {
+            h2 {
+                font-size: 1.8rem;
+                width: 100%;
+            }
+        }
+    }
+
+
+    .gridFotos {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img2"
+            "img3"
+            "img4"
+            "img4"
+            "img6"
+            "img5"
+            "img5";
+        row-gap: 15px;
+    }
+
+    .iframeBox {
+        width: 100%;
+
+    }
+
+    /* fin de galeria */
+
+    /* carrito de compras */
+    .parallaxOcho {
+        min-height: 85vh;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    /* contacto */
+    .parallaxTres {
+        background-position-x: right;
+    }
+}
