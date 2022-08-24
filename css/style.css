@@ -74,7 +74,7 @@ a {
 
 .parallax, .parallaxDos, .parallaxTres, .parallaxCuatro, .parallaxCinco, .parallaxSeis, .parallaxSiete, .parallaxOcho {
   background-color: black;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-1.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-1-1920.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -82,25 +82,25 @@ a {
   min-height: 90vh; }
 
 .parallaxDos {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-2.jpg); }
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-2-1920.jpg); }
 
 .parallaxTres {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-3.jpg); }
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-3-1920.jpg); }
 
 .parallaxCuatro {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-4.jpg); }
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-4-1920.jpg); }
 
 .parallaxCinco {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-5.jpg); }
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-5-1920.jpg); }
 
 .parallaxSeis {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-6.jpg); }
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-6-1920.jpg); }
 
 .parallaxSiete {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-7.jpg); }
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-7-1920.jpg); }
 
 .parallaxOcho {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-1.jpg); }
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-1-1920.jpg); }
 
 .gridLayout {
   display: grid;
@@ -116,6 +116,7 @@ main {
   grid-area: footer; }
 
 header .headerBackground {
+  height: 65px;
   background: rgba(0, 0, 0, 0.7);
   z-index: 2; }
 
@@ -554,8 +555,22 @@ header nav a .icon-service-bag {
     font-size: 2.8rem; }
   .formatoLogo {
     width: 120px; }
+  .parallax, .parallaxDos, .parallaxTres, .parallaxCuatro, .parallaxCinco, .parallaxSeis, .parallaxSiete, .parallaxOcho {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-1-1024.jpg); }
   .parallaxDos {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/maxi_perfil_parallax.jpg); }
+  .parallaxTres {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-3-1024.jpg); }
+  .parallaxCuatro {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-4-1024.jpg); }
+  .parallaxCinco {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-5-1024.jpg); }
+  .parallaxSeis {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-6-1024.jpg); }
+  .parallaxSiete {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-7-1024.jpg); }
+  .parallaxOcho {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-1-1024.jpg); }
   .copyright {
     letter-spacing: 0px; }
   .contamediact {
@@ -565,7 +580,13 @@ header nav a .icon-service-bag {
     display: none; }
   .posicionDer {
     padding: 5%;
-    background-color: rgba(0, 0, 0, 0.75); }
+    background-color: rgba(0, 0, 0, 0.75);
+    align-items: center; }
+    .posicionDer p {
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+      line-height: 19px;
+      text-align: justify; }
   /* fin de index */
   /* galeria */
   .bloqueImgGaleria .capa {
@@ -606,7 +627,7 @@ header nav a .icon-service-bag {
       letter-spacing: 1px;
       border: solid 1px white; } }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .posicionIzq img {
     display: none; }
   .posicionIzq h2 {

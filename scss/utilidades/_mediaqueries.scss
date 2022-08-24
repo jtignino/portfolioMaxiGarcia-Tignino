@@ -13,8 +13,36 @@
         width: 120px;
     }
 
+    .parallax {
+        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-1-1024.jpg);
+    }
+
     .parallaxDos {
         background-image: map-get($colores, gradiente-parallax), url(../images/maxi_perfil_parallax.jpg);
+    }
+
+    .parallaxTres {
+        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-3-1024.jpg);
+    }
+
+    .parallaxCuatro {
+        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-4-1024.jpg);
+    }
+
+    .parallaxCinco {
+        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-5-1024.jpg);
+    }
+
+    .parallaxSeis {
+        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-6-1024.jpg);
+    }
+
+    .parallaxSiete {
+        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-7-1024.jpg);
+    }
+
+    .parallaxOcho {
+        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-1-1024.jpg);
     }
 
     .copyright {
@@ -33,6 +61,13 @@
     .posicionDer {
         padding: 5%;
         background-color: rgba(0, 0, 0, 0.75);
+        align-items: center;
+        p{
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            line-height: 19px;
+            text-align: justify;
+        }
     }
 
     /* fin de index */
@@ -97,7 +132,7 @@
     }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
     .posicionIzq {
         img {
             display: none;
@@ -141,10 +176,10 @@
     }
 
     /* header */
-    header{
-       .headerBackground{
-        background: rgb(0, 0, 0);
-       } 
+    header {
+        .headerBackground {
+            background: rgb(0, 0, 0);
+        }
     }
 
     .navRedes {
