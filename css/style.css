@@ -185,7 +185,7 @@ header nav a .icon-service-bag {
 .parallax .centrarConFlex p, .parallaxDos .centrarConFlex p, .parallaxTres .centrarConFlex p, .parallaxCuatro .centrarConFlex p, .parallaxCinco .centrarConFlex p, .parallaxSeis .centrarConFlex p, .parallaxSiete .centrarConFlex p, .parallaxOcho .centrarConFlex p {
   max-width: 65%;
   padding-bottom: 10vh;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1.8rem;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
