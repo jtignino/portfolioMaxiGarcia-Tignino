@@ -14,7 +14,7 @@
     }
 
     .parallax {
-        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-1-1024.jpg);
+        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-1-1620-1080.jpg);
     }
 
     .parallaxDos {
@@ -22,27 +22,27 @@
     }
 
     .parallaxTres {
-        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-3-1024.jpg);
+        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-3-vertical-720.jpg);
     }
 
     .parallaxCuatro {
-        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-4-1024.jpg);
+        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-8-1620-1080.jpg);
     }
 
     .parallaxCinco {
-        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-5-1024.jpg);
+        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-5-1620-1080.jpg);
     }
 
     .parallaxSeis {
-        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-6-1024.jpg);
+        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-6-1620-1080.jpg);
     }
 
     .parallaxSiete {
-        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-7-1024.jpg);
+        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-7-1620-1080.jpg);
     }
 
     .parallaxOcho {
-        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-1-1024.jpg);
+        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-1-1620-1080.jpg);
     }
 
     .copyright {
@@ -133,6 +133,9 @@
 }
 
 @media only screen and (max-width: 991px) {
+    /* index */
+    
+
     .posicionIzq {
         img {
             display: none;
@@ -153,6 +156,17 @@
         }
     }
 
+
+    .posicionDer,
+    .posicionIzq {
+        p {
+            // font-size: 1.4rem;
+            // letter-spacing: 1px;
+            // line-height: 19px;
+            text-align: center;
+        }
+
+    }
     .carruselImg {
         max-height: 400px;
         object-fit: cover;
@@ -173,6 +187,38 @@
 
     h2 {
         font-size: 2.8rem;
+    }
+
+    .parallax {
+        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-1-1620-1080.jpg);
+    }
+
+    .parallaxDos {
+        background-image: map-get($colores, gradiente-parallax), url(../images/maxi_perfil_parallax.jpg);
+    }
+
+    .parallaxTres {
+        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-3-vertical-720.jpg);
+    }
+
+    .parallaxCuatro {
+        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-8-1620-1080.jpg);
+    }
+
+    .parallaxCinco {
+        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-5-1620-1080.jpg);
+    }
+
+    .parallaxSeis {
+        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-6-1620-1080.jpg);
+    }
+
+    .parallaxSiete {
+        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-7-1620-1080.jpg);
+    }
+
+    .parallaxOcho {
+        background-image: map-get($colores, gradiente-parallax), url(../images/parallax-1-1620-1080.jpg);
     }
 
     /* header */
@@ -226,6 +272,10 @@
                 margin: 10px 8px;
             }
         }
+    }
+
+    .min-vh-90{
+        min-height: 85vh;
     }
 
     /* fin de footer */
@@ -320,7 +370,7 @@
             font-size: 1.4rem;
             letter-spacing: 1px;
             line-height: 19px;
-            text-align: justify;
+            text-align: center;
         }
 
     }
