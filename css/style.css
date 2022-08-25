@@ -709,20 +709,22 @@ header nav a .icon-service-bag {
       margin: 10px 8px; }
   /* fin de footer */
   /* index */
-  .parallax .centrarConFlex h1, .parallaxDos .centrarConFlex h1, .parallaxTres .centrarConFlex h1, .parallaxCuatro .centrarConFlex h1, .parallaxCinco .centrarConFlex h1, .parallaxSeis .centrarConFlex h1, .parallaxSiete .centrarConFlex h1, .parallaxOcho .centrarConFlex h1 {
-    padding-top: 25vh;
-    font-weight: 600;
-    font-size: 3.2rem;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    border-bottom: 1px solid white; }
-  .parallax .centrarConFlex p, .parallaxDos .centrarConFlex p, .parallaxTres .centrarConFlex p, .parallaxCuatro .centrarConFlex p, .parallaxCinco .centrarConFlex p, .parallaxSeis .centrarConFlex p, .parallaxSiete .centrarConFlex p, .parallaxOcho .centrarConFlex p {
-    max-width: 90%;
-    font-size: 1.6rem;
-    letter-spacing: 1px;
-    line-height: 19px; }
-  .parallax .centrarConFlex h2, .parallaxDos .centrarConFlex h2, .parallaxTres .centrarConFlex h2, .parallaxCuatro .centrarConFlex h2, .parallaxCinco .centrarConFlex h2, .parallaxSeis .centrarConFlex h2, .parallaxSiete .centrarConFlex h2, .parallaxOcho .centrarConFlex h2 {
-    display: none; }
+  .parallax, .parallaxDos, .parallaxTres, .parallaxCuatro, .parallaxCinco, .parallaxSeis, .parallaxSiete, .parallaxOcho {
+    min-height: 85vh; }
+    .parallax .centrarConFlex h1, .parallaxDos .centrarConFlex h1, .parallaxTres .centrarConFlex h1, .parallaxCuatro .centrarConFlex h1, .parallaxCinco .centrarConFlex h1, .parallaxSeis .centrarConFlex h1, .parallaxSiete .centrarConFlex h1, .parallaxOcho .centrarConFlex h1 {
+      padding-top: 25vh;
+      font-weight: 600;
+      font-size: 3.2rem;
+      letter-spacing: 2px;
+      word-spacing: 2px;
+      border-bottom: 1px solid white; }
+    .parallax .centrarConFlex p, .parallaxDos .centrarConFlex p, .parallaxTres .centrarConFlex p, .parallaxCuatro .centrarConFlex p, .parallaxCinco .centrarConFlex p, .parallaxSeis .centrarConFlex p, .parallaxSiete .centrarConFlex p, .parallaxOcho .centrarConFlex p {
+      max-width: 90%;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+      line-height: 19px; }
+    .parallax .centrarConFlex h2, .parallaxDos .centrarConFlex h2, .parallaxTres .centrarConFlex h2, .parallaxCuatro .centrarConFlex h2, .parallaxCinco .centrarConFlex h2, .parallaxSeis .centrarConFlex h2, .parallaxSiete .centrarConFlex h2, .parallaxOcho .centrarConFlex h2 {
+      display: none; }
   .subPrincipal {
     font-size: 1.8rem;
     letter-spacing: 2px;
