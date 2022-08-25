@@ -220,6 +220,10 @@
     .parallaxOcho {
         background-image: map-get($colores, gradiente-parallax), url(../images/parallax-1-1620-1080.jpg);
     }
+    
+    .min-vh-90{
+        min-height: 85vh;
+    }
 
     /* header */
     header {
@@ -274,9 +278,6 @@
         }
     }
 
-    .min-vh-90{
-        min-height: 85vh;
-    }
 
     /* fin de footer */
 
@@ -286,7 +287,7 @@
             h1 {
                 padding-top: 25vh;
                 font-weight: 600;
-                font-size: 3rem;
+                font-size: 3.2rem;
                 letter-spacing: 2px;
                 word-spacing: 2px;
                 border-bottom: 1px solid white;
@@ -294,7 +295,7 @@
 
             p {
                 max-width: 90%;
-                font-size: 1.4rem;
+                font-size: 1.6rem;
                 letter-spacing: 1px;
                 line-height: 19px;
             }
@@ -306,7 +307,7 @@
     }
 
     .subPrincipal {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         letter-spacing: 2px;
         word-spacing: 2px;
     }
@@ -367,7 +368,7 @@
     .posicionDer,
     .posicionIzq {
         p {
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             letter-spacing: 1px;
             line-height: 19px;
             text-align: center;
