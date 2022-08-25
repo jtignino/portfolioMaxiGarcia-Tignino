@@ -553,7 +553,7 @@ header nav a .icon-service-bag {
 /* pantallas mayores a 768px y menores a 1024 */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   html {
-    font-size: 55%; }
+    font-size: 60%; }
   h2 {
     font-size: 2.8rem; }
   .formatoLogo {
