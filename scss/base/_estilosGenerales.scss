@@ -111,7 +111,7 @@ a{
 
 .parallaxCuatro{
     @extend .parallax;
-    background-image: map-get($colores, gradiente-parallax), url(../images/parallax-8-1920.jpg); 
+    background-image: map-get($colores, gradiente-parallax-4), url(../images/parallax-8-1920.jpg); 
 }
 
 .parallaxCinco{
