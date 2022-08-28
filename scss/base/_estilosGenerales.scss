@@ -16,7 +16,8 @@ body{
     font-size: 62.5%;
     font-style: normal;
     font-family: 'Poppins', sans-serif;
-    color: white;       
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);       
 }
 
 h1{
@@ -44,6 +45,7 @@ h1, h2, h3{
 a{
     text-decoration: none; 
     color: map-get($colores, blanco);
+    text-shadow: none;
 }
 
 .centrarSinFlex{
@@ -101,7 +103,7 @@ a{
 
 .parallaxDos {
     @extend .parallax;
-    background-image: map-get($colores, gradiente-parallax), url(../images/parallax-2-1920.jpg);
+    background-image: map-get($colores, gradiente-parallax), url(../images/parallax-2a-1920.jpg);
 }
 
 .parallaxTres{

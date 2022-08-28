@@ -14,7 +14,8 @@ body {
   font-size: 62.5%;
   font-style: normal;
   font-family: 'Poppins', sans-serif;
-  color: white; }
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); }
 
 h1 {
   padding-top: 110px; }
@@ -36,7 +37,8 @@ h1, h2, h3 {
 /* fin de las etiquetas "h" */
 a {
   text-decoration: none;
-  color: white; }
+  color: white;
+  text-shadow: none; }
 
 .centrarSinFlex {
   text-align: center; }
@@ -82,7 +84,7 @@ a {
   min-height: 90vh; }
 
 .parallaxDos {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-2-1920.jpg); }
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-2a-1920.jpg); }
 
 .parallaxTres {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-3-1920.jpg); }
@@ -408,9 +410,9 @@ header nav a .icon-service-bag {
   text-align: left; }
 
 .parallaxSiete .centrarConFlex2 p {
+  width: 100%;
   margin-top: 5px;
   padding-top: 15px;
-  padding-bottom: 30px;
   font-weight: 300;
   font-size: 1.5rem;
   font-family: 'Roboto', sans-serif;
@@ -418,6 +420,30 @@ header nav a .icon-service-bag {
   line-height: 20px;
   text-align: justify;
   color: #e4e4e4; }
+
+.parallaxSiete .centrarConFlex2 :nth-child(10) {
+  padding-bottom: 30px; }
+
+.card-bg {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 0;
+  box-shadow: 0 0.5rem 1.2rem 0.5rem rgba(0, 0, 0, 0.3); }
+  .card-bg .card-body h2 {
+    font-size: 1.7rem;
+    padding: 12px 0;
+    margin-bottom: 0px; }
+  .card-bg .card-body a {
+    margin: 12px;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    border: solid 1px white;
+    color: white;
+    transition: background-color 0.5s, color 0.5s; }
+    .card-bg .card-body a:hover {
+      background: white;
+      color: black; }
 
 .boxTienda {
   display: flex;

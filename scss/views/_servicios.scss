@@ -11,9 +11,9 @@
         }
 
         p {
+            width: 100%;
             margin-top: 5px;
             padding-top: 15px;
-            padding-bottom: 30px;
             font-weight: 300;
             font-size: 1.5rem;
             font-family: 'Roboto', sans-serif;
@@ -21,6 +21,9 @@
             line-height: 20px;
             text-align: justify;
             color: rgb(228, 228, 228);
+        }
+        & :nth-child(10){
+            padding-bottom: 30px;
         }
 
     }
