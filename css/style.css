@@ -182,6 +182,7 @@ header nav a .icon-service-bag {
   letter-spacing: 8px;
   word-spacing: 15px;
   margin-bottom: 8px;
+  text-transform: initial;
   border-bottom: 3px solid white; }
 
 .parallax .centrarConFlex p, .parallaxDos .centrarConFlex p, .parallaxTres .centrarConFlex p, .parallaxCuatro .centrarConFlex p, .parallaxCinco .centrarConFlex p, .parallaxSeis .centrarConFlex p, .parallaxSiete .centrarConFlex p, .parallaxOcho .centrarConFlex p {
