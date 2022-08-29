@@ -457,6 +457,7 @@ header nav a .icon-service-bag {
     letter-spacing: 0rem;
     line-height: 2.4rem; }
   .card-bg .card-body a {
+    position: relative;
     margin: 12px;
     text-transform: uppercase;
     padding: 5px 12px;
@@ -465,7 +466,21 @@ header nav a .icon-service-bag {
     border: solid 1px white;
     color: white;
     transition: background-color 0.5s, color 0.5s; }
-    .card-bg .card-body a:hover {
+    .card-bg .card-body a ::before {
+      content: "a";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 130px;
+      height: 30px;
+      background: white;
+      color: black; }
+    .card-bg .card-body a:hover ::before {
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
       background: white;
       color: black; }
 
