@@ -84,7 +84,7 @@
                 <h1>Contacto</h1>
                 <!-- inicia el formulario de contacto -->
                 <section class="secForm">
-                    <form action="" class="contenedorForm animate__animated animate__fadeIn animate__slow">
+                    <form action="" class="contenedorForm animate__animated animate__fadeIn animate__slow rounded">
                         <input id="nombre" class="formInput" name="nombre" type="text" minlength="3" maxlength="50"
                             required placeholder="Nombre y apellidos *" autofocus autocomplete="off">
                         <input id="email" class="formInput" name="email" type="email" minlength="3" maxlength="50"
@@ -95,17 +95,17 @@
                         <textarea name="mensaje" id="mensaje" class="formInput" maxlength="1000"
                             placeholder="Máximo 1000 caracteres"></textarea>
                         <legend>* Campos obligatorios</legend>
-                        <div class="checkboxInfo d-inline-flex align-items-start">
+                        <div class="checkboxInfo d-inline-flex align-items-start w-100">
                             <input id="tyc" name="tyc" type="checkbox" value="tyc" required>
-                            <label for="tyc"> He leído y acepto los términos y condiciones.</label>
+                            <label for="tyc" class="lh-sm">He leído y acepto los términos y condiciones.</label>
                         </div>
-                        <div class="checkboxInfo d-inline-flex align-items-start">
+                        <div class="checkboxInfo d-inline-flex align-items-start w-100">
                             <input id="news" name="newslatter" type="checkbox" value="news">
-                            <label for="news">Sí, deseo suscribirme al newsletter para recibir información actualizada.</label>
+                            <label for="news" class="lh-sm">Sí, deseo suscribirme al newsletter para recibir información actualizada.</label>
                         </div>
                         <div class="contenedorBotones">
-                            <input class="boton" type="submit" value="Enviar">
-                            <input class="boton" type="reset" value="Borrar">
+                            <input class="boton rounded" type="submit" value="Enviar">
+                            <input class="boton rounded" type="reset" value="Borrar">
                         </div>
                     </form>
                     <!-- fin del formulario -->

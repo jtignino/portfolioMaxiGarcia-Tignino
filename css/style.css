@@ -251,6 +251,9 @@ header nav a .icon-service-bag {
   width: 100%;
   padding-left: 0; }
 
+.carruselImg {
+  box-shadow: 0 0.5rem 1.2rem 0.5rem rgba(0, 0, 0, 0.3); }
+
 .posicionDer h2,
 .posicionIzq h2 {
   width: 100%;
@@ -260,6 +263,7 @@ header nav a .icon-service-bag {
 
 .posicionDer p,
 .posicionIzq p {
+  width: 100%;
   margin: 10px 0px;
   font-weight: 300;
   font-size: 1.6rem;
@@ -426,8 +430,8 @@ header nav a .icon-service-bag {
   padding-bottom: 30px; }
 
 .card-bg {
-  max-width: 45rem;
-  min-height: 520px;
+  max-width: 35rem;
+  min-height: 400px;
   background-color: rgba(0, 0, 0, 0.7);
   border: 0;
   box-shadow: 0 0.5rem 1.2rem 0.5rem rgba(0, 0, 0, 0.3); }
@@ -544,7 +548,8 @@ header nav a .icon-service-bag {
   margin-left: auto;
   margin-right: auto;
   padding: 35px;
-  background-color: rgba(0, 0, 0, 0.79); }
+  background-color: rgba(0, 0, 0, 0.79);
+  box-shadow: 0 0.5rem 1.2rem 0.5rem rgba(0, 0, 0, 0.3); }
   .contenedorForm .label {
     font-size: 1.6rem;
     text-transform: uppercase;

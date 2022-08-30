@@ -94,6 +94,9 @@
     padding-left: 0;
 }
 
+.carruselImg{
+    box-shadow: 0 .5rem 1.2rem .5rem rgba(0, 0, 0, .3);
+}
 
 .posicionDer,
 .posicionIzq {
@@ -105,6 +108,7 @@
     }
 
     p {
+        width: 100%;
         margin: 10px 0px;
         font-weight: 300;
         font-size: 1.6rem;
