@@ -784,7 +784,7 @@ header nav a .icon-service-bag {
     .parallax .centrarConFlex h1, .parallaxDos .centrarConFlex h1, .parallaxTres .centrarConFlex h1, .parallaxCuatro .centrarConFlex h1, .parallaxCinco .centrarConFlex h1, .parallaxSeis .centrarConFlex h1, .parallaxSiete .centrarConFlex h1, .parallaxOcho .centrarConFlex h1 {
       padding-top: 25vh;
       font-weight: 600;
-      font-size: 3.2rem;
+      font-size: 3rem;
       letter-spacing: 2px;
       word-spacing: 2px;
       border-bottom: 1px solid white; }
