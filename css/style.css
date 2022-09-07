@@ -631,7 +631,7 @@ header nav a .icon-service-bag {
   .parallax, .parallaxDos, .parallaxTres, .parallaxCuatro, .parallaxCinco, .parallaxSeis, .parallaxSiete, .parallaxOcho {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-1-1620-1080.jpg); }
   .parallaxDos {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/maxi_perfil_parallax.jpg); }
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/maxi_parallax-vertical-1024-1536.jpg); }
   .parallaxTres {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-3-vertical-720.jpg); }
   .parallaxCuatro {
@@ -660,6 +660,8 @@ header nav a .icon-service-bag {
       letter-spacing: 1px;
       line-height: 19px;
       text-align: justify; }
+  .parallax .centrarConFlex h1, .parallaxDos .centrarConFlex h1, .parallaxTres .centrarConFlex h1, .parallaxCuatro .centrarConFlex h1, .parallaxCinco .centrarConFlex h1, .parallaxSeis .centrarConFlex h1, .parallaxSiete .centrarConFlex h1, .parallaxOcho .centrarConFlex h1 {
+    font-size: 5rem; }
   /* fin de index */
   /* galeria */
   .bloqueImgGaleria .capa {
@@ -732,9 +734,9 @@ header nav a .icon-service-bag {
   h2 {
     font-size: 2.8rem; }
   .parallax, .parallaxDos, .parallaxTres, .parallaxCuatro, .parallaxCinco, .parallaxSeis, .parallaxSiete, .parallaxOcho {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-1-1620-1080.jpg); }
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/grid-galeria-2.jpg); }
   .parallaxDos {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/maxi_perfil_parallax.jpg); }
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/maxi_parallax-vertical-768-1152.jpg); }
   .parallaxTres {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-3-vertical-720.jpg); }
   .parallaxCuatro {
@@ -747,6 +749,8 @@ header nav a .icon-service-bag {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-7-1620-1080.jpg); }
   .parallaxOcho {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-1-1620-1080.jpg); }
+  .parallaxScroll {
+    background-attachment: scroll; }
   .min-vh-90 {
     min-height: 85vh; }
   /* header */
@@ -784,7 +788,7 @@ header nav a .icon-service-bag {
     .parallax .centrarConFlex h1, .parallaxDos .centrarConFlex h1, .parallaxTres .centrarConFlex h1, .parallaxCuatro .centrarConFlex h1, .parallaxCinco .centrarConFlex h1, .parallaxSeis .centrarConFlex h1, .parallaxSiete .centrarConFlex h1, .parallaxOcho .centrarConFlex h1 {
       padding-top: 25vh;
       font-weight: 600;
-      font-size: 3rem;
+      font-size: 2.8rem;
       letter-spacing: 2px;
       word-spacing: 2px;
       border-bottom: 1px solid white; }
@@ -817,7 +821,6 @@ header nav a .icon-service-bag {
   .bloqueImgGaleria:hover > img {
     transform: scale(1); }
   .parallaxDos {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/maxi_perfil_parallax.jpg);
     min-height: 85vh; }
   .posicionDer {
     position: initial;
