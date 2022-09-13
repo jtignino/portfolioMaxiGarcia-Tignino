@@ -693,7 +693,7 @@ header nav a .icon-service-bag {
   h2 {
     font-size: 2.8rem; }
   .parallax, .parallaxDos, .parallaxTres, .parallaxCuatro, .parallaxCinco, .parallaxSeis, .parallaxSiete, .parallaxOcho {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/grid-galeria-2.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-1-vertical-648.jpg);
     min-height: 85vh; }
   .parallaxDos {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/maxi_parallax-vertical-768-1152.jpg);
