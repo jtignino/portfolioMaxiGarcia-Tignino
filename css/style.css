@@ -821,6 +821,10 @@ header nav a .icon-service-bag {
     width: 320px;
     height: 250px; }
   /* fin de galeria */
+  /* servicios */
+  .parallaxSiete .centrarConFlex2 h2 {
+    font-size: 1.6rem; }
+  /* fin de servicios */
   /* tienda */
   .boxTienda {
     flex-direction: column;
