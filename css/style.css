@@ -676,7 +676,7 @@ header nav a .icon-service-bag {
     height: auto; }
   /* fin de tienda */ }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 428px) {
   /* estilos generales */
   .gridLayout {
     display: grid;
