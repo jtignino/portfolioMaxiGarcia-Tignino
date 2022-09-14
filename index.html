@@ -17,7 +17,6 @@
 
 <body>
     <!-- inicia el header -->
-    <!-- el color de fondo del navbar en la vista desktop tiene transparencia para que se pueda ver un poco la imagen de fondo de cada uno de los parallax, y a su vez te acompaña al hacer scroll. Para hacerlo de este modo utilizo el atributo fixed en lugar de sticky. -->
     <header>
         <div class="fixed-top">
             <nav class="navbar navbar-expand-lg navbar-dark headerBackground py-0">
@@ -85,10 +84,10 @@
     <!-- fin del header -->
 
     <div class="gridLayout">
-        <!-- inicia el main. Se compone de 3 grandes secciones, las primeras dos comparten el mismo background con efecto parallax y la última utiliza otro parallax. -->
+        <!-- inicia el main -->
         <main>
             <div class="parallax">
-                <!-- 1ra section: engloba al título, subtítulo, párrafo introductorio y flecha de scroll que apunta a la segunda section. Todo está animado. -->
+                <!-- 1ra section -->
                 <section class="container-xl px-5 px-xl-0 sectionHeight centrarConFlex">
                     <h1 class="animate__animated animate__fadeIn animate__slow">Maximiliano García</h1>
                     <h3 class="subPrincipal animate__animated animate__fadeIn animate__slow animate__delay-1s">FOTOGRAFÍA PROFESIONAL</h3>
@@ -98,9 +97,10 @@
                     <div class="divFlecha animate__animated animate__flash animate__slower animate__infinite animate__delay-3s centrarConFlex">
                         <a href="#maxiG"><img class="flechaScrollUno" src="./images/angle-down.png" alt="botón para desplazar hacia abajo"></a>
                     </div>
+                    <!-- fin del contenedor -->
                 </section>
 
-                <!-- 2da: aparece un carrusel con 4 imágenes que al hacer click te envían a la galería, y un título con su respectivo párrafo (todo animado). -->
+                <!-- 2da section -->
                 <section class="container-xl px-5 px-xl-0 d-flex min-vh-100 justify-content-center align-items-center posicionRelativa" id="maxiG">
                     <div class="row min-vh-80 d-flex justify-content-center align-items-center row-height">  
                         <div class="col-12 col-lg-6">
@@ -163,11 +163,11 @@
                         class="divFlecha animate__animated animate__flash animate__slower animate__infinite animate__delay-3s centrarConFlex">
                         <a href="#bio"><img class="flechaScrollUno" src="./images/angle-down.png" alt="botón para desplazar hacia abajo"></a>
                     </div>
+                    <!-- fin del contenedor -->
                 </section>
             </div>
-            <!-- fin del primer parallax -->
 
-            <!-- 3ra: comienza un nuevo parallax con un breve resumen del fotógrafo y un botón que apunta a la página "Sobre mí". También está animado. -->
+            <!-- 3ra section -->
             <section class="parallaxDos" id="bio">
                 <div class="container-xl px-5 px-xl-0 d-flex min-vh-90 justify-content-start align-items-center">
                     <div class="row justify-content-center justify-content-lg-end align-items-center">
@@ -182,7 +182,6 @@
                     </div>
                 </div>
             </section>
-            <!-- fin del resumen y el segundo parallax -->
         </main>
         <!-- fin del main -->
         <!-- inicia el footer -->
