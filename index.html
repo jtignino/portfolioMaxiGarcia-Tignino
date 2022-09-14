@@ -16,6 +16,8 @@
 </head>
 
 <body>
+    <!-- inicia el header -->
+    <!-- el color de fondo del navbar en la vista desktop tiene transparencia para que se pueda ver un poco la imagen de fondo de cada uno de los parallax, y a su vez te acompaña al hacer scroll. Para hacerlo de este modo utilizo el atributo fixed en lugar de sticky. -->
     <header>
         <div class="fixed-top">
             <nav class="navbar navbar-expand-lg navbar-dark headerBackground py-0">
@@ -80,29 +82,33 @@
             </nav>
         </div>
     </header>
+    <!-- fin del header -->
 
     <div class="gridLayout">
+        <!-- inicia el main. Se compone de 3 grandes secciones, las primeras dos comparten el mismo background con efecto parallax y la última utiliza otro parallax. -->
         <main>
             <div class="parallax">
-                <!-- utilizo una etiqueta section para el título, subtítulo, párrafo y flecha de scroll. -->
+                <!-- 1ra section: engloba al título, subtítulo, párrafo introductorio y flecha de scroll que apunta a la segunda section. Todo está animado. -->
                 <section class="container-xl px-5 px-xl-0 sectionHeight centrarConFlex">
                     <h1 class="animate__animated animate__fadeIn animate__slow">Maximiliano García</h1>
                     <h3 class="subPrincipal animate__animated animate__fadeIn animate__slow animate__delay-1s">FOTOGRAFÍA PROFESIONAL</h3>
                     <p class="animate__animated animate__fadeIn animate__delay-2s animate__slow">Navegá por el sitio para ver mis trabajos y conocer todos los servicios de imagen y video que ofrezco.</p>
+
+                    <!-- contenedor de la flecha de scroll -->
                     <div class="divFlecha animate__animated animate__flash animate__slower animate__infinite animate__delay-3s centrarConFlex">
                         <a href="#maxiG"><img class="flechaScrollUno" src="./images/angle-down.png" alt="botón para desplazar hacia abajo"></a>
                     </div>
                 </section>
 
+                <!-- 2da: aparece un carrusel con 4 imágenes que al hacer click te envían a la galería, y un título con su respectivo párrafo (todo animado). -->
                 <section class="container-xl px-5 px-xl-0 d-flex min-vh-100 justify-content-center align-items-center posicionRelativa" id="maxiG">
                     <div class="row min-vh-80 d-flex justify-content-center align-items-center row-height">  
                         <div class="col-12 col-lg-6">
                             <div class="wow posicionIzq animate__animated animate__fadeIn">
-                                <h2 class="pb-1">Experiencia</h2>
+                                <h2 class="pb-1">Arte</h2>
                                 <img src="./images/Line 2-corta-3px.png" alt="línea de subrayado">
                                 <p>Un álbum de modelaje, la cobertura de un evento social o empresarial, fotografía de producto, vos traes la idea y yo la transformo en arte.</p> 
-                                <p>¿Querés ver más? Hacé click en las imágenes.</p>
-                                
+                                <p>¿Querés ver más? Hacé click en las imágenes.</p>                               
                             </div>
                         </div>
                         
@@ -151,7 +157,8 @@
                             </button>
                         </div>
                     </div>
-
+                    
+                    <!-- contenedor de la flecha de scroll -->
                     <div
                         class="divFlecha animate__animated animate__flash animate__slower animate__infinite animate__delay-3s centrarConFlex">
                         <a href="#bio"><img class="flechaScrollUno" src="./images/angle-down.png" alt="botón para desplazar hacia abajo"></a>
@@ -160,7 +167,7 @@
             </div>
             <!-- fin del primer parallax -->
 
-            <!-- un breve resumen del fotógrafo y un botón que apunta a la página "Sobre mí" -->
+            <!-- 3ra: comienza un nuevo parallax con un breve resumen del fotógrafo y un botón que apunta a la página "Sobre mí". También está animado. -->
             <section class="parallaxDos" id="bio">
                 <div class="container-xl px-5 px-xl-0 d-flex min-vh-90 justify-content-start align-items-center">
                     <div class="row justify-content-center justify-content-lg-end align-items-center">
@@ -177,7 +184,7 @@
             </section>
             <!-- fin del resumen y el segundo parallax -->
         </main>
-
+        <!-- fin del main -->
         <!-- inicia el footer -->
         <footer class="footer text-white ">
             <div class="container-xl px-5 px-xl-0 h-100">
