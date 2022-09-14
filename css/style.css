@@ -10,7 +10,6 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  /* overflow-x: hidden; */
   font-size: 62.5%;
   font-style: normal;
   font-family: 'Poppins', sans-serif;
@@ -34,7 +33,6 @@ h1, h2, h3 {
   word-spacing: 3px;
   text-transform: uppercase; }
 
-/* fin de las etiquetas "h" */
 a {
   text-decoration: none;
   color: white;
@@ -205,7 +203,6 @@ header nav a .icon-service-bag {
   width: 45px;
   padding: 10px 0 0px 0; }
 
-/* acá comienzo a darle formato al resumen de fotos */
 .parallax .centrarConFlex h2, .parallaxDos .centrarConFlex h2, .parallaxTres .centrarConFlex h2, .parallaxCuatro .centrarConFlex h2, .parallaxCinco .centrarConFlex h2, .parallaxSeis .centrarConFlex h2, .parallaxSiete .centrarConFlex h2, .parallaxOcho .centrarConFlex h2 {
   margin-bottom: 4px;
   padding-top: 14vh;
@@ -223,7 +220,6 @@ header nav a .icon-service-bag {
 .carousel-indicators-height {
   height: 30px; }
 
-/* segunda seccion del index */
 .posicionDer {
   display: flex;
   flex-direction: column;
@@ -551,8 +547,9 @@ header nav a .icon-service-bag {
       color: black; }
 
 /* ------- RESPONSIVE ------- */
-/* pantallas mayores a 768px y menores a 1024 */
+/* TABLETS: pantallas mayores a 768px y menores a 1024 */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* estilos generales */
   html {
     font-size: 60%; }
   h2 {
@@ -573,6 +570,8 @@ header nav a .icon-service-bag {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-7-1620-1080.jpg); }
   .parallaxOcho {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.17) 50%, rgba(0, 0, 0, 0.8) 100%), url(../images/parallax-1-1620-1080.jpg); }
+  /* fin de estilos generales */
+  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* header */
   header .headerBackground {
     background: black; }
@@ -582,11 +581,13 @@ header nav a .icon-service-bag {
       flex-direction: column; }
   .formatoLogo {
     width: 120px; }
-  /* fin de header */
+  /* fin del header */
+  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* footer */
   .copyright {
     letter-spacing: 0px; }
   /* fin del footer */
+  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* index */
   .divFlecha {
     display: none; }
@@ -626,7 +627,8 @@ header nav a .icon-service-bag {
   .carruselImg {
     max-height: 400px;
     object-fit: cover; }
-  /* fin de index */
+  /* fin del index */
+  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* galeria */
   .bloqueImgGaleria .capa {
     opacity: 1;
@@ -645,6 +647,7 @@ header nav a .icon-service-bag {
     width: 560px;
     height: 315px; }
   /* fin de galeria */
+  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* servicios */
   .parallaxSiete .centrarConFlex2 h2 {
     font-size: 1.8rem; }
@@ -657,6 +660,7 @@ header nav a .icon-service-bag {
   .parallaxSiete .centrarConFlex2:nth-child(10) {
     padding-bottom: 25px; }
   /* fin de servicios */
+  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* contacto */
   .secForm {
     min-height: 60vh;
@@ -666,6 +670,7 @@ header nav a .icon-service-bag {
     max-width: 90%;
     height: 80%; }
   /* fin de contacto */
+  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* tienda */
   .boxTienda {
     flex-direction: column;
@@ -674,8 +679,9 @@ header nav a .icon-service-bag {
     align-items: center;
     padding: 20px 0;
     height: auto; }
-  /* fin de tienda */ }
+  /* fin de la tienda */ }
 
+/* MOBILE: pantallas hasta 428px porque hay un iPhone que tiene esta resolución */
 @media only screen and (max-width: 428px) {
   /* estilos generales */
   .gridLayout {
@@ -719,6 +725,7 @@ header nav a .icon-service-bag {
   .min-vh-90 {
     min-height: 85vh; }
   /* fin de estilos generales */
+  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* header */
   header .headerBackground {
     background: black; }
@@ -728,7 +735,8 @@ header nav a .icon-service-bag {
       flex-direction: column; }
   .formatoLogo {
     width: 120px; }
-  /* fin de header */
+  /* fin del header */
+  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* footer */
   .copyright {
     font-size: 1.1rem;
@@ -739,6 +747,7 @@ header nav a .icon-service-bag {
       width: 24px;
       margin: 10px 8px; }
   /* fin del footer */
+  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* index */
   .divFlecha {
     display: none; }
@@ -790,11 +799,13 @@ header nav a .icon-service-bag {
     line-height: 19px;
     text-align: center; }
   /* fin del index */
+  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* sobre mí */
   .sectionSobreMi2 p {
     letter-spacing: 1px;
     line-height: 19px; }
   /* fin de sobre mí */
+  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* galeria */
   .parallaxSeis .centrarConFlex2 h2 {
     font-size: 1.8rem;
@@ -821,10 +832,12 @@ header nav a .icon-service-bag {
     width: 320px;
     height: 250px; }
   /* fin de galeria */
+  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* servicios */
   .parallaxSiete .centrarConFlex2 h2 {
     font-size: 1.6rem; }
   /* fin de servicios */
+  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* tienda */
   .boxTienda {
     flex-direction: column;
@@ -834,6 +847,7 @@ header nav a .icon-service-bag {
     padding: 20px 0;
     height: auto; }
   /* fin de tienda */
+  /* --------------------------------------------------------------------------------------------------------------------------------- */
   /* contacto */
   .contenedorForm {
     max-width: 100%; }
